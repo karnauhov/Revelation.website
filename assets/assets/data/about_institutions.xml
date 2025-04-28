@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<institutions>
+    <institution>
+        <name>Das Institut für Neutestamentliche Textforschung (INTF)</name>
+        <idIcon>inst_munster.svg</idIcon>
+        <officialSite>https://www.uni-muenster.de/INTF</officialSite>
+        <sources>
+            <source>
+                <text>The New Testament Virtual Manuscript Room</text>
+                <link>https://ntvmr.uni-muenster.de</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Wikipedia</name>
+        <idIcon>inst_wiki.svg</idIcon>
+        <officialSite>https://www.wikipedia.org</officialSite>
+        <sources>
+            <source>
+                <text>Biblical manuscript</text>
+                <link>https://en.wikipedia.org/wiki/Biblical_manuscript</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>The British Library</name>
+        <idIcon>inst_bl.svg</idIcon>
+        <officialSite>https://www.bl.uk</officialSite>
+        <sources>
+            <source>
+                <text>Codex Sinaiticus (INTF)</text>
+                <link>https://ntvmr.uni-muenster.de/manuscript-workspace?docID=20001</link>
+            </source>
+            <source>
+                <text>Codex Alexandrinus (CSNTM)</text>
+                <link>https://manuscripts.csntm.org/Manuscript/Group/GA_02</link>
+            </source>
+            <source>
+                <text>Papyrus 18 (4CARE)</text>
+                <link>https://4care-skos.mf.no/4care-artefacts/298</link>
+            </source>
+            <source>
+                <text>Papyrus 43 (CSNTM)</text>
+                <link>https://manuscripts.csntm.org/manuscript/View/GA_P43</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Biblioteca Apostolica Vaticana</name>
+        <idIcon>inst_bav.png</idIcon>
+        <officialSite>https://www.vaticanlibrary.va</officialSite>
+        <sources>
+            <source>
+                <text>Codex Vaticanus 2066</text>
+                <link>https://digi.vatlib.it/view/MSS_Vat.gr.2066</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>The Chester Beatty</name>
+        <idIcon>inst_cb.svg</idIcon>
+        <officialSite>https://chesterbeatty.ie</officialSite>
+        <sources>
+            <source>
+                <text>Papyrus 47</text>
+                <link>https://viewer.cbl.ie/viewer/index</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>gallica.bnf.fr / Bibliothèque nationale de France</name>
+        <idIcon>inst_bnf.svg</idIcon>
+        <officialSite>https://gallica.bnf.fr</officialSite>
+        <sources>
+            <source>
+                <text>Codex Ephraemi Rescriptus</text>
+                <link>https://gallica.bnf.fr/ark:/12148/btv1b8470433r.r=Codex%20Ephraemi%20Rescriptus?rk=21459;2</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Российская национальная библиотека</name>
+        <idIcon>inst_nlr.png</idIcon>
+        <officialSite>https://nlr.ru</officialSite>
+        <sources>
+            <source>
+                <text>Codex Porphyrianus</text>
+                <link></link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Ιερά Μονή Παντοκράτορος Αγίου Όρους</name>
+        <idIcon>inst_pntk.png</idIcon>
+        <officialSite>https://www.pantokrator.gr</officialSite>
+        <sources>
+            <source>
+                <text>Codex Athous Pantokratoros (The Library of Congress)</text>
+                <link>https://www.loc.gov/resource/amedmonastery.00271051554-ma</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Yale Library</name>
+        <idIcon>inst_yale.png</idIcon>
+        <officialSite>https://library.yale.edu</officialSite>
+        <sources>
+            <source>
+                <text>Papyrus 24 (recto)</text>
+                <link>https://collections.library.yale.edu/catalog/17147600</link>
+            </source>
+            <source>
+                <text>Papyrus 24 (verso)</text>
+                <link>https://collections.library.yale.edu/catalog/17147601</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Bibliothèque nationale et universitaire</name>
+        <idIcon>inst_bnu.svg</idIcon>
+        <officialSite>https://www.bnu.fr</officialSite>
+        <sources>
+            <source>
+                <text>Papyrus 85 (INTF)</text>
+                <link>https://ntvmr.uni-muenster.de/manuscript-workspace?docID=10085</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Institut français d’archéologie orientale du Caire</name>
+        <idIcon>inst_ifao.png</idIcon>
+        <officialSite>https://www.ifao.egnet.net</officialSite>
+        <sources>
+            <source>
+                <text>Papyrus 98 (Peter Malik)</text>
+                <link>https://www.academia.edu/13166007/Another_Look_at_P.IFAO_II_31_P98_An_Updated_Transcription_and_Textual_Analysis</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>The Egypt Exploration Society and Faculty of Classics, University of Oxford</name>
+        <idIcon>inst_oxford.svg</idIcon>
+        <officialSite>https://www.ox.ac.uk</officialSite>
+        <sources>
+            <source>
+                <text>Papyrus 115</text>
+                <link>https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4499_Revelation_II_1-3_13-15_27-29_III_10-12_V_8-9_VI_5-6_VIII_3-8_11-IX_5_7-16_18-X_4_8-XI_5_8-15_18-XII_5_8-10_12-17_XIII_1-3_6-16_18-XIV_3_5-7_10-11_14-15_18-XV_1_4-7/21178999</link>
+            </source>
+            <source>
+                <text>Uncial 0308</text>
+                <link>https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4500_Revelation_XI_15-16_17-18/21179002</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Μονή Αγίου Παντελεήμονος</name>
+        <idIcon>inst_pm.jpg</idIcon>
+        <officialSite>https://www.monastiria.gr/mount-athos-st-panteleimons-russian-monastery/?lang=en</officialSite>
+        <sources>
+            <source>
+                <text>Uncial 052</text>
+                <link></link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>The University of Chicago Library</name>
+        <idIcon>inst_ucl.svg</idIcon>
+        <officialSite>https://www.lib.uchicago.edu</officialSite>
+        <sources>
+            <source>
+                <text>Uncial 0163</text>
+                <link>https://goodspeed.lib.uchicago.edu/view/index.php?doc=9351&obj=001</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Princeton Theological Seminary</name>
+        <idIcon>inst_pts.png</idIcon>
+        <officialSite>https://ptsem.edu</officialSite>
+        <sources>
+            <source>
+                <text>Uncial 0169</text>
+                <link>https://papyri.info/apis/pts.apis.5</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Biblioteca Medicea Laurenziana</name>
+        <idIcon>inst_bml.png</idIcon>
+        <officialSite>https://www.bmlonline.it</officialSite>
+        <sources>
+            <source>
+                <text>Uncial 0207 (CSNTM)</text>
+                <link>https://manuscripts.csntm.org/manuscript/View/GA_0207</link>
+            </source>
+        </sources>
+    </institution>
+    <institution>
+        <name>Istituto Papirologico “Girolamo Vitelli”</name>
+        <idIcon>inst_ip.png</idIcon>
+        <officialSite>https://www.istitutopapirologico.unifi.it</officialSite>
+        <sources>
+            <source>
+                <text>Uncial 0229</text>
+                <link>https://psi-online.it/documents/psi;13;1296</link>
+            </source>
+        </sources>
+    </institution>
+</institutions>
