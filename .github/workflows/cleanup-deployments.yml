@@ -1,0 +1,42 @@
+name: Cleanup old deployments (keep latest 2)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      deployments: write
+    steps:
+      - name: Fetch deployments
+        id: fetch
+        run: |
+          echo "Getting deployments..."
+          curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            https://api.github.com/repos/${{ github.repository }}/deployments \
+            | jq '.[].id' > all_deployments.txt
+          
+          echo "All deployments:"
+          cat all_deployments.txt
+
+      - name: Keep latest 2, delete the rest
+        run: |
+          echo "Preparing list of deployments to delete..."
+          
+          ids_to_delete=$(tail -n +3 all_deployments.txt)
+          
+          if [ -z "$ids_to_delete" ]; then
+            echo "Nothing to delete."
+            exit 0
+          fi
+          
+          echo "Deployments to delete:"
+          echo "$ids_to_delete"
+          
+          for id in $ids_to_delete; do
+            id=$(echo $id | tr -d '"')
+            echo "Deleting deployment ID: $id"
+            curl -X DELETE -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+              https://api.github.com/repos/${{ github.repository }}/deployments/$id
+          done
