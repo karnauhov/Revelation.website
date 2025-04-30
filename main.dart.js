@@ -99852,7 +99852,7 @@ return A.E(c.fn(),$async$pr)
 case 3:o=c.gh_()
 n=o.geO()
 m=o.gbp()
-l=B.d.ho(p.z*0.9)
+l=B.d.ho(p.z*0.75)
 k=Math.min(l/n,l/m)
 if(k>=1){q=a
 s=1
