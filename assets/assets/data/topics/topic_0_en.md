@@ -2,7 +2,7 @@ f you do not believe in God or if your religion is not Christianity, don’t rus
 
 The Book of Revelation is a book for all Christians. Jesus Christ Himself delivered this message. From the very first lines it is stated Who it is from, to whom it is addressed, and **how it should be properly handled**. 
 
-> "Blessed is he that **readeth**, and they that **hear** the words of this prophecy, and **keep** those things which are written therein: for the time is at hand." (Rev 1:3)
+> «Blessed is he that **readeth**, and they that **hear** the words of this prophecy, and **keep** those things which are written therein: for the time is at hand.» (Rev 1:3)
 
 ## Primary Sources
 
@@ -45,3 +45,21 @@ This central and most important stage in studying the Book of Revelation focuses
 ### Stage 5. Analysis of structure and connections.
 
 This stage helps to see the **text in the context of the entire Book of Revelation**, establishing connections between the passage and other parts of the book, which allows for a deeper understanding of its meaning and the author's intent. The context of each passage may even be found in another part of the book, not just in adjacent passages. This underscores the importance of structural analysis for understanding the text in a broader context.
+
+And finally, having gained a deep understanding of the text, the last two stages will allow us both to see how it fits into God’s plan throughout history and to examine our own lives in the light of the revealed truths. The “Stages of Fulfillment” are intended to strengthen our faith and to prompt us to live in obedience and fidelity to God’s Word.
+
+### Stage 6. Fulfillment of Prophecies.
+
+In this stage, we will focus on how various prophecies have been fulfilled at different points in history, as well as highlight those that await their complete realization. The goal here is not to provide all the answers but to carefully examine **what has already occurred in the history of the church and of humanity as a whole**. This exploration will deepen our awareness of how God’s plan has unfolded through the ages and will further fortify our faith in Him and His Word.
+
+### Stage 7. Living Faith in Action.
+
+This stage invites us **to reflect on how we live in the light of the Revelation of Jesus Christ**. Faith is not merely words or thoughts; it must find expression in our deeds. Scripture clearly states:
+
+> «But be ye **doers of the word**, and not hearers only, deceiving your own selves.» (James 1:22)
+
+And Jesus Himself reminds us:
+
+> «If ye love me, **keep my commandments**.» (John 14:15)
+
+These exhortations are addressed to every Christian, especially at times when our faith feels weak. They call us not just to assent to the truth but to actively follow it each day.
