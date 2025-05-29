@@ -114841,7 +114841,7 @@ ghe(){return"Wikipedia"},
 gh7(){return"INTF"},
 ghL(){return"Image source"},
 gSw(){return"Preface"},
-gSv(){return"Primary sources and principles"},
+gSv(){return"Primary sources, principles, stages"},
 gSy(){return"Introduction"},
 gSx(){return"Revelation 1:1-3"},
 gIE(){return"show more information"},
@@ -115074,7 +115074,7 @@ ghe(){return"\u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f"},
 gh7(){return"INTF"},
 ghL(){return"\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0439"},
 gSw(){return"\u041f\u0440\u0435\u0434\u0438\u0441\u043b\u043e\u0432\u0438\u0435"},
-gSv(){return"\u041f\u0435\u0440\u0432\u043e\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438 \u0438 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u044b"},
+gSv(){return"\u041f\u0435\u0440\u0432\u043e\u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u0438, \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u044b, \u044d\u0442\u0430\u043f\u044b"},
 gSy(){return"\u0412\u0432\u0435\u0434\u0435\u043d\u0438\u0435"},
 gSx(){return"\u041e\u0442\u043a\u0440\u043e\u0432\u0435\u043d\u0438\u0435 1:1-3"},
 gIE(){return"\u043f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0438"},
@@ -115307,7 +115307,7 @@ ghe(){return"\u0412\u0456\u043a\u0456\u043f\u0435\u0434\u0456\u044f"},
 gh7(){return"INTF"},
 ghL(){return"\u0414\u0436\u0435\u0440\u0435\u043b\u043e \u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u044c"},
 gSw(){return"\u041f\u0435\u0440\u0435\u0434\u043c\u043e\u0432\u0430"},
-gSv(){return"\u041f\u0435\u0440\u0448\u043e\u0434\u0436\u0435\u0440\u0435\u043b\u0430 \u0442\u0430 \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0438"},
+gSv(){return"\u041f\u0435\u0440\u0448\u043e\u0434\u0436\u0435\u0440\u0435\u043b\u0430, \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0438, \u0435\u0442\u0430\u043f\u0438"},
 gSy(){return"\u0412\u0441\u0442\u0443\u043f"},
 gSx(){return"\u041e\u0431'\u044f\u0432\u043b\u0435\u043d\u043d\u044f 1:1-3"},
 gIE(){return"\u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u0431\u0456\u043b\u044c\u0448\u0435 \u0456\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0456\u0457"},
@@ -116831,19 +116831,19 @@ return A.vv(p,A.aY2(r),p)},
 Jw(a,b){var s=null,r=A.U(a).p2.x
 return A.b3(b,s,s,s,r==null?s:r.eS(B.nV),B.bJ,s)}}
 A.aOA.prototype={
-$1(c9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8="1:1-20; 2:1-7",a9="3:5-22; 4:1-8",b0="10:8-11; 11:1-19",b1="11:19; 12:1-17; 13:1-4",b2="https://www.bl.uk/terms/#websites",b3="https://ntvmr.uni-muenster.de/license-agreement",b4="https://www.csntm.org/terms-of-use-copyright",b5="1r",b6="1v",b7="-",b8="16:17-18",b9="https://4care-skos.mf.no/4care-artefacts/298",c0="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4499_Revelation_II_1-3_13-15_27-29_III_10-12_V_8-9_VI_5-6_VIII_3-8_11-IX_5_7-16_18-X_4_8-XI_5_8-15_18-XII_5_8-10_12-17_XIII_1-3_6-16_18-XIV_3_5-7_10-11_14-15_18-XV_1_4-7/21178999",c1="\ud83d\udcdc Courtesy of The Egypt Exploration Society",c2="https://www.ees.ac.uk/collections/reproduction-requests-and-fees.html",c3="and the Faculty of Classics (University of Oxford)",c4="https://goodspeed.lib.uchicago.edu/view/index.php?doc=9351&obj=001",c5="https://papyri.info/apis/pts.apis.5",c6="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4500_Revelation_XI_15-16_17-18/21179002",c7=this.a,c8=c7.c
+$1(d0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8="1:1-20; 2:1-7",a9="3:5-22; 4:1-8",b0="10:8-11; 11:1-19",b1="11:19; 12:1-17; 13:1-4",b2="https://www.bl.uk/terms/#websites",b3="https://ntvmr.uni-muenster.de/license-agreement",b4="https://www.csntm.org/terms-of-use-copyright",b5="1r",b6="1v",b7="-",b8="16:17-18",b9="https://4care-skos.mf.no/4care-artefacts/298",c0="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4499_Revelation_II_1-3_13-15_27-29_III_10-12_V_8-9_VI_5-6_VIII_3-8_11-IX_5_7-16_18-X_4_8-XI_5_8-15_18-XII_5_8-10_12-17_XIII_1-3_6-16_18-XIV_3_5-7_10-11_14-15_18-XV_1_4-7/21178999",c1="\ud83d\udcdc Courtesy of The Egypt Exploration Society",c2="https://www.ees.ac.uk/collections/reproduction-requests-and-fees.html",c3="and the Faculty of Classics (University of Oxford)",c4="https://goodspeed.lib.uchicago.edu/view/index.php?doc=9351&obj=001",c5="https://papyri.info/apis/pts.apis.5",c6="https://psi-online.it/rightpermission",c7="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_LXVI_4500_Revelation_XI_15-16_17-18/21179002",c8=this.a,c9=c8.c
+c9.toString
+s=A.zA(c9,!1,t.WL)
+c8=c8.c
 c8.toString
-s=A.zA(c8,!1,t.WL)
-c7=c7.c
-c7.toString
-c8=s.b
-B.b.ab(c8)
+c9=s.b
+B.b.ab(c9)
 r=s.c
 B.b.ab(r)
 q=s.d
 B.b.ab(q)
 p=t.J
-o=A.am(c7,B.n,p)
+o=A.am(c8,B.n,p)
 n=o.gSH()
 m=o.gSD()
 l=o.gSB()
@@ -116886,8 +116886,8 @@ k=o.gh7()
 o=o.ghL()
 i=A.a([new A.I("249r","1:1-11","primary_sources/20046/Vat.gr.2066_0519_fa_0259r_l.jpg"),new A.I("249v","1:11-20; 2:1-2","primary_sources/20046/Vat.gr.2066_0520_fa_0259v_l.jpg"),new A.I("250r","2:2-14","primary_sources/20046/Vat.gr.2066_0521_fa_0260r_l.jpg"),new A.I("250v","2:14-26","primary_sources/20046/Vat.gr.2066_0522_fa_0260v_l.jpg"),new A.I("251r","2:26-29; 3:1-9","primary_sources/20046/Vat.gr.2066_0523_fa_0261r_l.jpg"),new A.I("251v","3:9-21","primary_sources/20046/Vat.gr.2066_0524_fa_0261v_l.jpg"),new A.I("252r","3:21-22; 4:1-10","primary_sources/20046/Vat.gr.2066_0525_fa_0262r_l.jpg"),new A.I("252v","4:10-11; 5:1-9","primary_sources/20046/Vat.gr.2066_0526_fa_0262v_l.jpg"),new A.I("253r","5:9-14; 6:1-5","primary_sources/20046/Vat.gr.2066_0527_fa_0263r_l.jpg"),new A.I("253v","6:5-15","primary_sources/20046/Vat.gr.2066_0528_fa_0263v_l.jpg"),new A.I("254r","6:15-17; 7:1-9","primary_sources/20046/Vat.gr.2066_0531_fa_0264r_l.jpg"),new A.I("254v","7:9-17","primary_sources/20046/Vat.gr.2066_0532_fa_0264v_l.jpg"),new A.I("255r","7:17; 8:1-11","primary_sources/20046/Vat.gr.2066_0533_fa_0265r_l.jpg"),new A.I("255v","8:11-13; 9:1-6","primary_sources/20046/Vat.gr.2066_0534_fa_0265v_l.jpg"),new A.I("256r","9:6-17","primary_sources/20046/Vat.gr.2066_0535_fa_0266r_l.jpg"),new A.I("256v","9:17-21; 10:1-4","primary_sources/20046/Vat.gr.2066_0536_fa_0266v_l.jpg"),new A.I("257r","10:4-11; 11:1-2","primary_sources/20046/Vat.gr.2066_0537_fa_0267r_l.jpg"),new A.I("257v","11:2-11","primary_sources/20046/Vat.gr.2066_0538_fa_0267v_l.jpg"),new A.I("258r","11:11-19; 12:1","primary_sources/20046/Vat.gr.2066_0539_fa_0268r_l.jpg"),new A.I("258v","12:1-11","primary_sources/20046/Vat.gr.2066_0540_fa_0268v_l.jpg"),new A.I("259r","12:11-18; 13:1-2","primary_sources/20046/Vat.gr.2066_0541_fa_0269r_l.jpg"),new A.I("259v","13:2-12","primary_sources/20046/Vat.gr.2066_0542_fa_0269v_l.jpg"),new A.I("260r","13:13-18; 14:1-3","primary_sources/20046/Vat.gr.2066_0543_fa_0270r_l.jpg"),new A.I("260v","14:3-11","primary_sources/20046/Vat.gr.2066_0544_fa_0270v_l.jpg"),new A.I("261r","14:9-20; 15:1","primary_sources/20046/Vat.gr.2066_0545_fa_0271r_l.jpg"),new A.I("261v","15:1-8; 16:1-2","primary_sources/20046/Vat.gr.2066_0546_fa_0271v_l.jpg"),new A.I("262r","16:2-13","primary_sources/20046/Vat.gr.2066_0547_fa_0272r_l.jpg"),new A.I("262v","16:13-21; 17:1","primary_sources/20046/Vat.gr.2066_0548_fa_0272v_l.jpg"),new A.I("263r","17:1-12","primary_sources/20046/Vat.gr.2066_0551_fa_0273r_l.jpg"),new A.I("263v","17:12-18; 18:1-5","primary_sources/20046/Vat.gr.2066_0552_fa_0273v_l.jpg"),new A.I("264r","18:5-15","primary_sources/20046/Vat.gr.2066_0555_fa_0274r_l.jpg"),new A.I("264v","18:15-24; 19:1","primary_sources/20046/Vat.gr.2066_0556_fa_0274v_l.jpg"),new A.I("265r","19:1-12","primary_sources/20046/Vat.gr.2066_0559_fa_0275r_l.jpg"),new A.I("265v","19:12-21","primary_sources/20046/Vat.gr.2066_0560_fa_0275v_l.jpg"),new A.I("266r","20:1-11","primary_sources/20046/Vat.gr.2066_0561_fa_0276r_l.jpg"),new A.I("266v","20:11-15; 21:1-8","primary_sources/20046/Vat.gr.2066_0562_fa_0276v_l.jpg"),new A.I("267r","21:8-20","primary_sources/20046/Vat.gr.2066_0565_fa_0277r_l.jpg"),new A.I("267v","21:20-27; 22:1-7","primary_sources/20046/Vat.gr.2066_0566_fa_0277v_l.jpg"),new A.I("268r","22:7-21","primary_sources/20046/Vat.gr.2066_0567_fa_0278r_l.jpg")],c)
 a2=t.df
-B.b.F(c8,A.a([n,j,A.fC(A.a([A.a4(["text","\ud83d\udcdc \xa9 Biblioteca Apostolica Vaticana","url","https://www.vaticanlibrary.va"],a,a)],a0),f,d,b,a1,g,"U046",!1,m,"https://en.wikipedia.org/wiki/Codex_Vaticanus_2066",k,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20046",o,"https://digi.vatlib.it/view/MSS_Vat.gr.2066",h,5,i,!1,"assets/images/PrimarySources/preview_20046.png",405,l,e)],a2))
-e=A.am(c7,B.n,p)
+B.b.F(c9,A.a([n,j,A.fC(A.a([A.a4(["text","\ud83d\udcdc \xa9 Biblioteca Apostolica Vaticana","url","https://www.vaticanlibrary.va"],a,a)],a0),f,d,b,a1,g,"U046",!1,m,"https://en.wikipedia.org/wiki/Codex_Vaticanus_2066",k,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20046",o,"https://digi.vatlib.it/view/MSS_Vat.gr.2066",h,5,i,!1,"assets/images/PrimarySources/preview_20046.png",405,l,e)],a2))
+e=A.am(c8,B.n,p)
 l=e.gRn()
 i=e.gRj()
 h=e.gRh()
@@ -116937,13 +116937,13 @@ j=e.gTT()
 f=e.ghe()
 b=e.gh7()
 e=e.ghL()
-c8=A.a([new A.I("1","11:15-18","primary_sources/20051/20051_01.jpg"),new A.I("2","11:18-12:1","primary_sources/20051/20051_02.jpg"),new A.I("3","12:2","primary_sources/20051/20051_03.jpg"),new A.I("4","12:3","primary_sources/20051/20051_04.jpg"),new A.I("5","12:4-5","primary_sources/20051/20051_05.jpg"),new A.I("6","12:5-6","primary_sources/20051/20051_06.jpg"),new A.I("7","12:7-9","primary_sources/20051/20051_07.jpg"),new A.I("8","12:9-10","primary_sources/20051/20051_08.jpg"),new A.I("9","12:11-14","primary_sources/20051/20051_09.jpg"),new A.I("10","12:15-17","primary_sources/20051/20051_10.jpg"),new A.I("11","12:18-13:1,3-6","primary_sources/20051/20051_11.jpg"),new A.I("12","13:6-10","primary_sources/20051/20051_12.jpg"),new A.I("13","13:11-13","primary_sources/20051/20051_13.jpg"),new A.I("14","13:13-17","primary_sources/20051/20051_14.jpg"),new A.I("15","13:18","primary_sources/20051/20051_15.jpg"),new A.I("16","14:1-3","primary_sources/20051/20051_16.jpg"),new A.I("17","14:3-5","primary_sources/20051/20051_17.jpg"),new A.I("18","14:6-8","primary_sources/20051/20051_18.jpg"),new A.I("19","14:9-11","primary_sources/20051/20051_19.jpg"),new A.I("20","14:11-13","primary_sources/20051/20051_20.jpg"),new A.I("21","14:14-16","primary_sources/20051/20051_21.jpg"),new A.I("22","14:17-19","primary_sources/20051/20051_22.jpg"),new A.I("23","14:20","primary_sources/20051/20051_23.jpg"),new A.I("24","15:1-2","primary_sources/20051/20051_24.jpg"),new A.I("25","15:3-6","primary_sources/20051/20051_25.jpg"),new A.I("26","15:7-16:1","primary_sources/20051/20051_26.jpg"),new A.I("27","16:2-3","primary_sources/20051/20051_27.jpg"),new A.I("28","16:4-6","primary_sources/20051/20051_28.jpg"),new A.I("29","16:7","primary_sources/20051/20051_29.jpg"),new A.I("30","16:8-9","primary_sources/20051/20051_30.jpg"),new A.I("31","16:10-11","primary_sources/20051/20051_31.jpg"),new A.I("32",b7,"primary_sources/20051/20051_32.jpg"),new A.I("33","16:12","primary_sources/20051/20051_33.jpg"),new A.I("34","16:13-16","primary_sources/20051/20051_34.jpg"),new A.I("35",b8,"primary_sources/20051/20051_35.jpg"),new A.I("36","16:19","primary_sources/20051/20051_36.jpg"),new A.I("37","16:20-21","primary_sources/20051/20051_37.jpg"),new A.I("38","17:1-3","primary_sources/20051/20051_38.jpg"),new A.I("39","17:4-5","primary_sources/20051/20051_39.jpg"),new A.I("40","17:6-7","primary_sources/20051/20051_40.jpg"),new A.I("41","17:8-9","primary_sources/20051/20051_41.jpg"),new A.I("42",b7,"primary_sources/20051/20051_42.jpg"),new A.I("43","17:9-11","primary_sources/20051/20051_43.jpg"),new A.I("44","17:12-18","primary_sources/20051/20051_44.jpg"),new A.I("45","18:1-2","primary_sources/20051/20051_45.jpg"),new A.I("46","18:2-6","primary_sources/20051/20051_46.jpg"),new A.I("47","18:6-9","primary_sources/20051/20051_47.jpg"),new A.I("48","18:9-14","primary_sources/20051/20051_48.jpg"),new A.I("49","18:15-20","primary_sources/20051/20051_49.jpg"),new A.I("50","18:21-24","primary_sources/20051/20051_50.jpg"),new A.I("51","19:1-4","primary_sources/20051/20051_51.jpg"),new A.I("52","19:5-7","primary_sources/20051/20051_52.jpg"),new A.I("53","19:7-10","primary_sources/20051/20051_53.jpg"),new A.I("54","19:11-12","primary_sources/20051/20051_54.jpg"),new A.I("55","19:12-15","primary_sources/20051/20051_55.jpg"),new A.I("56","19:16-18","primary_sources/20051/20051_56.jpg"),new A.I("57","19:19-20","primary_sources/20051/20051_57.jpg"),new A.I("58","19:20-21","primary_sources/20051/20051_58.jpg"),new A.I("59","20:1-3","primary_sources/20051/20051_59.jpg"),new A.I("60","20:4","primary_sources/20051/20051_60.jpg"),new A.I("61","20:4","primary_sources/20051/20051_61.jpg"),new A.I("62","20:5-6","primary_sources/20051/20051_62.jpg"),new A.I("63","20:7-8","primary_sources/20051/20051_63.jpg"),new A.I("64",b7,"primary_sources/20051/20051_64.jpg"),new A.I("65","20:9-10","primary_sources/20051/20051_65.jpg"),new A.I("66",b7,"primary_sources/20051/20051_66.jpg"),new A.I("67","20:11","primary_sources/20051/20051_67.jpg"),new A.I("68","20:12-13","primary_sources/20051/20051_68.jpg"),new A.I("69","20:14-21:1","primary_sources/20051/20051_69.jpg"),new A.I("70","21:2","primary_sources/20051/20051_70.jpg"),new A.I("71","21:3-6","primary_sources/20051/20051_71.jpg"),new A.I("72","21:6-8","primary_sources/20051/20051_72.jpg"),new A.I("73","21:9-10","primary_sources/20051/20051_73.jpg"),new A.I("74","21:10-12","primary_sources/20051/20051_74.jpg"),new A.I("75","21:13-15","primary_sources/20051/20051_75.jpg"),new A.I("76","21:16-18","primary_sources/20051/20051_76.jpg"),new A.I("77","21:19","primary_sources/20051/20051_77.jpg"),new A.I("78","21:20","primary_sources/20051/20051_78.jpg"),new A.I("79","21:20-21","primary_sources/20051/20051_79.jpg"),new A.I("80","21:21-25","primary_sources/20051/20051_80.jpg"),new A.I("81","21:26-22:2","primary_sources/20051/20051_81.jpg"),new A.I("82","22:3-4","primary_sources/20051/20051_82.jpg"),new A.I("83","22:5-6","primary_sources/20051/20051_83.jpg"),new A.I("84","22:7,15-16","primary_sources/20051/20051_84.jpg"),new A.I("85","22:17-19","primary_sources/20051/20051_85.jpg"),new A.I("86","22:20-21","primary_sources/20051/20051_86.jpg"),new A.I("87",b7,"primary_sources/20051/20051_87.jpg"),new A.I("88",b7,"primary_sources/20051/20051_88.jpg"),new A.I("89",b7,"primary_sources/20051/20051_89.jpg"),new A.I("90",b7,"primary_sources/20051/20051_90.jpg"),new A.I("91",b7,"primary_sources/20051/20051_91.jpg"),new A.I("92",b7,"primary_sources/20051/20051_92.jpg"),new A.I("93",b7,"primary_sources/20051/20051_93.jpg")],c)
-B.b.F(r,A.a([l,k,d,A.fC(A.a([A.a4(["text","\ud83d\udcdc \u0399\u03b5\u03c1\u03ac \u039c\u03bf\u03bd\u03ae \u03a0\u03b1\u03bd\u03c4\u03bf\u03ba\u03c1\u03ac\u03c4\u03bf\u03c1\u03bf\u03c2 \u0391\u03b3\u03af\u03bf\u03c5 \u038c\u03c1\u03bf\u03c5\u03c2","url","https://www.pantokrator.gr"],a,a),A.a4(["text","\ud83d\udcf7 Library of Congress Collection of Manuscripts from the Monasteries of Mt. Athos","url","https://www.loc.gov/collections/manuscripts-from-the-monasteries-of-mount-athos/about-this-collection/rights-and-access"],a,a)],a0),n,g,j,m,a1,"U051",!0,f,"https://en.wikipedia.org/wiki/Uncial_051",b,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20051",e,"https://www.loc.gov/resource/amedmonastery.00271051554-ma",o,3,c8,!0,"assets/images/PrimarySources/preview_20051.png",208,i,h)],a2))
-p=A.am(c7,B.n,p)
-c7=p.gQZ()
+c9=A.a([new A.I("1","11:15-18","primary_sources/20051/20051_01.jpg"),new A.I("2","11:18-12:1","primary_sources/20051/20051_02.jpg"),new A.I("3","12:2","primary_sources/20051/20051_03.jpg"),new A.I("4","12:3","primary_sources/20051/20051_04.jpg"),new A.I("5","12:4-5","primary_sources/20051/20051_05.jpg"),new A.I("6","12:5-6","primary_sources/20051/20051_06.jpg"),new A.I("7","12:7-9","primary_sources/20051/20051_07.jpg"),new A.I("8","12:9-10","primary_sources/20051/20051_08.jpg"),new A.I("9","12:11-14","primary_sources/20051/20051_09.jpg"),new A.I("10","12:15-17","primary_sources/20051/20051_10.jpg"),new A.I("11","12:18-13:1,3-6","primary_sources/20051/20051_11.jpg"),new A.I("12","13:6-10","primary_sources/20051/20051_12.jpg"),new A.I("13","13:11-13","primary_sources/20051/20051_13.jpg"),new A.I("14","13:13-17","primary_sources/20051/20051_14.jpg"),new A.I("15","13:18","primary_sources/20051/20051_15.jpg"),new A.I("16","14:1-3","primary_sources/20051/20051_16.jpg"),new A.I("17","14:3-5","primary_sources/20051/20051_17.jpg"),new A.I("18","14:6-8","primary_sources/20051/20051_18.jpg"),new A.I("19","14:9-11","primary_sources/20051/20051_19.jpg"),new A.I("20","14:11-13","primary_sources/20051/20051_20.jpg"),new A.I("21","14:14-16","primary_sources/20051/20051_21.jpg"),new A.I("22","14:17-19","primary_sources/20051/20051_22.jpg"),new A.I("23","14:20","primary_sources/20051/20051_23.jpg"),new A.I("24","15:1-2","primary_sources/20051/20051_24.jpg"),new A.I("25","15:3-6","primary_sources/20051/20051_25.jpg"),new A.I("26","15:7-16:1","primary_sources/20051/20051_26.jpg"),new A.I("27","16:2-3","primary_sources/20051/20051_27.jpg"),new A.I("28","16:4-6","primary_sources/20051/20051_28.jpg"),new A.I("29","16:7","primary_sources/20051/20051_29.jpg"),new A.I("30","16:8-9","primary_sources/20051/20051_30.jpg"),new A.I("31","16:10-11","primary_sources/20051/20051_31.jpg"),new A.I("32",b7,"primary_sources/20051/20051_32.jpg"),new A.I("33","16:12","primary_sources/20051/20051_33.jpg"),new A.I("34","16:13-16","primary_sources/20051/20051_34.jpg"),new A.I("35",b8,"primary_sources/20051/20051_35.jpg"),new A.I("36","16:19","primary_sources/20051/20051_36.jpg"),new A.I("37","16:20-21","primary_sources/20051/20051_37.jpg"),new A.I("38","17:1-3","primary_sources/20051/20051_38.jpg"),new A.I("39","17:4-5","primary_sources/20051/20051_39.jpg"),new A.I("40","17:6-7","primary_sources/20051/20051_40.jpg"),new A.I("41","17:8-9","primary_sources/20051/20051_41.jpg"),new A.I("42",b7,"primary_sources/20051/20051_42.jpg"),new A.I("43","17:9-11","primary_sources/20051/20051_43.jpg"),new A.I("44","17:12-18","primary_sources/20051/20051_44.jpg"),new A.I("45","18:1-2","primary_sources/20051/20051_45.jpg"),new A.I("46","18:2-6","primary_sources/20051/20051_46.jpg"),new A.I("47","18:6-9","primary_sources/20051/20051_47.jpg"),new A.I("48","18:9-14","primary_sources/20051/20051_48.jpg"),new A.I("49","18:15-20","primary_sources/20051/20051_49.jpg"),new A.I("50","18:21-24","primary_sources/20051/20051_50.jpg"),new A.I("51","19:1-4","primary_sources/20051/20051_51.jpg"),new A.I("52","19:5-7","primary_sources/20051/20051_52.jpg"),new A.I("53","19:7-10","primary_sources/20051/20051_53.jpg"),new A.I("54","19:11-12","primary_sources/20051/20051_54.jpg"),new A.I("55","19:12-15","primary_sources/20051/20051_55.jpg"),new A.I("56","19:16-18","primary_sources/20051/20051_56.jpg"),new A.I("57","19:19-20","primary_sources/20051/20051_57.jpg"),new A.I("58","19:20-21","primary_sources/20051/20051_58.jpg"),new A.I("59","20:1-3","primary_sources/20051/20051_59.jpg"),new A.I("60","20:4","primary_sources/20051/20051_60.jpg"),new A.I("61","20:4","primary_sources/20051/20051_61.jpg"),new A.I("62","20:5-6","primary_sources/20051/20051_62.jpg"),new A.I("63","20:7-8","primary_sources/20051/20051_63.jpg"),new A.I("64",b7,"primary_sources/20051/20051_64.jpg"),new A.I("65","20:9-10","primary_sources/20051/20051_65.jpg"),new A.I("66",b7,"primary_sources/20051/20051_66.jpg"),new A.I("67","20:11","primary_sources/20051/20051_67.jpg"),new A.I("68","20:12-13","primary_sources/20051/20051_68.jpg"),new A.I("69","20:14-21:1","primary_sources/20051/20051_69.jpg"),new A.I("70","21:2","primary_sources/20051/20051_70.jpg"),new A.I("71","21:3-6","primary_sources/20051/20051_71.jpg"),new A.I("72","21:6-8","primary_sources/20051/20051_72.jpg"),new A.I("73","21:9-10","primary_sources/20051/20051_73.jpg"),new A.I("74","21:10-12","primary_sources/20051/20051_74.jpg"),new A.I("75","21:13-15","primary_sources/20051/20051_75.jpg"),new A.I("76","21:16-18","primary_sources/20051/20051_76.jpg"),new A.I("77","21:19","primary_sources/20051/20051_77.jpg"),new A.I("78","21:20","primary_sources/20051/20051_78.jpg"),new A.I("79","21:20-21","primary_sources/20051/20051_79.jpg"),new A.I("80","21:21-25","primary_sources/20051/20051_80.jpg"),new A.I("81","21:26-22:2","primary_sources/20051/20051_81.jpg"),new A.I("82","22:3-4","primary_sources/20051/20051_82.jpg"),new A.I("83","22:5-6","primary_sources/20051/20051_83.jpg"),new A.I("84","22:7,15-16","primary_sources/20051/20051_84.jpg"),new A.I("85","22:17-19","primary_sources/20051/20051_85.jpg"),new A.I("86","22:20-21","primary_sources/20051/20051_86.jpg"),new A.I("87",b7,"primary_sources/20051/20051_87.jpg"),new A.I("88",b7,"primary_sources/20051/20051_88.jpg"),new A.I("89",b7,"primary_sources/20051/20051_89.jpg"),new A.I("90",b7,"primary_sources/20051/20051_90.jpg"),new A.I("91",b7,"primary_sources/20051/20051_91.jpg"),new A.I("92",b7,"primary_sources/20051/20051_92.jpg"),new A.I("93",b7,"primary_sources/20051/20051_93.jpg")],c)
+B.b.F(r,A.a([l,k,d,A.fC(A.a([A.a4(["text","\ud83d\udcdc \u0399\u03b5\u03c1\u03ac \u039c\u03bf\u03bd\u03ae \u03a0\u03b1\u03bd\u03c4\u03bf\u03ba\u03c1\u03ac\u03c4\u03bf\u03c1\u03bf\u03c2 \u0391\u03b3\u03af\u03bf\u03c5 \u038c\u03c1\u03bf\u03c5\u03c2","url","https://www.pantokrator.gr"],a,a),A.a4(["text","\ud83d\udcf7 Library of Congress Collection of Manuscripts from the Monasteries of Mt. Athos","url","https://www.loc.gov/collections/manuscripts-from-the-monasteries-of-mount-athos/about-this-collection/rights-and-access"],a,a)],a0),n,g,j,m,a1,"U051",!0,f,"https://en.wikipedia.org/wiki/Uncial_051",b,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20051",e,"https://www.loc.gov/resource/amedmonastery.00271051554-ma",o,3,c9,!0,"assets/images/PrimarySources/preview_20051.png",208,i,h)],a2))
+p=A.am(c8,B.n,p)
+c8=p.gQZ()
 h=p.gQV()
 i=p.gQT()
-c8=p.gQX()
+c9=p.gQX()
 o=p.gQY()
 e=p.gQW()
 b=p.gQS()
@@ -116952,10 +116952,10 @@ a1=p.ghe()
 m=p.gh7()
 j=p.ghL()
 g=A.a([new A.I(b6,"1:4-7","primary_sources/10018/BL-Papyrus_2053_f001v.jpg")],c)
-c7=A.fC(A.a([A.a4(["text","\ud83d\udcdc From the British Library Collection (Inv. Nr. 2053v)","url",b2],a,a),A.a4(["text","\ud83d\udcf7 Sofia Heim, 2021, 'Artefact ID 298', 4CARE database","url",b9],a,a)],a0),b,i,f,h,e,"P018",!1,a1,"https://en.wikipedia.org/wiki/Papyrus_18",m,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10018",j,b9,c8,5,g,!0,"assets/images/PrimarySources/preview_10018.png",4,o,c7)
+c8=A.fC(A.a([A.a4(["text","\ud83d\udcdc From the British Library Collection (Inv. Nr. 2053v)","url",b2],a,a),A.a4(["text","\ud83d\udcf7 Sofia Heim, 2021, 'Artefact ID 298', 4CARE database","url",b9],a,a)],a0),b,i,f,h,e,"P018",!1,a1,"https://en.wikipedia.org/wiki/Papyrus_18",m,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10018",j,b9,c9,5,g,!0,"assets/images/PrimarySources/preview_10018.png",4,o,c8)
 o=p.gR6()
 g=p.gR2()
-c8=p.gR0()
+c9=p.gR0()
 j=p.gR4()
 m=p.gR5()
 a1=p.gR3()
@@ -116965,7 +116965,7 @@ f=p.ghe()
 i=p.gh7()
 b=p.ghL()
 n=A.a([new A.I(b5,"5:5-8","primary_sources/10024/32259786.jpg"),new A.I(b6,"6:5-8","primary_sources/10024/32259790.jpg")],c)
-o=A.fC(A.a([A.a4(["text","\ud83d\udcdc Special Collections, Yale Divinity Library","url","https://lux.collections.yale.edu/content/open-access-policy-2011"],a,a)],a0),e,c8,h,g,a1,"P024",!1,f,"https://en.wikipedia.org/wiki/Papyrus_24",i,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10024",b,"https://collections.library.yale.edu/catalog/17147600",j,5,n,!0,"assets/images/PrimarySources/preview_10024.png",8,m,o)
+o=A.fC(A.a([A.a4(["text","\ud83d\udcdc Special Collections, Yale Divinity Library","url","https://lux.collections.yale.edu/content/open-access-policy-2011"],a,a)],a0),e,c9,h,g,a1,"P024",!1,f,"https://en.wikipedia.org/wiki/Papyrus_24",i,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10024",b,"https://collections.library.yale.edu/catalog/17147600",j,5,n,!0,"assets/images/PrimarySources/preview_10024.png",8,m,o)
 m=p.gRf()
 n=p.gRb()
 j=p.gR9()
@@ -116975,15 +116975,15 @@ f=p.gRc()
 a1=p.gR7()
 g=p.gRa()
 h=p.ghe()
-c8=p.gh7()
+c9=p.gh7()
 e=p.ghL()
 d=A.a([new A.I(b5,"2:12-13","primary_sources/10043/P43_A.jpg"),new A.I(b6,"15:8; 16:1-2","primary_sources/10043/P43_B.jpg")],c)
-m=A.fC(A.a([A.a4(["text","\ud83d\udcdc From the British Library Collection (Inv. Nr. 2241)","url",b2],a,a),A.a4(["text","\ud83d\udcf7 The Center for the Study of New Testament Manuscripts (www.csntm.org) digitized Papyrus 43 at the British Library","url",b4],a,a)],a0),a1,j,g,n,f,"P043",!1,h,"https://en.wikipedia.org/wiki/Papyrus_43",c8,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10043",e,"https://manuscripts.csntm.org/manuscript/View/GA_P43",b,5,d,!1,"assets/images/PrimarySources/preview_10043.png",5,i,m)
+m=A.fC(A.a([A.a4(["text","\ud83d\udcdc From the British Library Collection (Inv. Nr. 2241)","url",b2],a,a),A.a4(["text","\ud83d\udcf7 The Center for the Study of New Testament Manuscripts (www.csntm.org) digitized Papyrus 43 at the British Library","url",b4],a,a)],a0),a1,j,g,n,f,"P043",!1,h,"https://en.wikipedia.org/wiki/Papyrus_43",c9,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10043",e,"https://manuscripts.csntm.org/manuscript/View/GA_P43",b,5,d,!1,"assets/images/PrimarySources/preview_10043.png",5,i,m)
 i=p.gRv()
 d=p.gRr()
 b=p.gRp()
 e=p.gRt()
-c8=p.gRu()
+c9=p.gRu()
 h=p.gRs()
 f=p.gRo()
 n=p.gRq()
@@ -116991,8 +116991,8 @@ g=p.ghe()
 j=p.gh7()
 a1=p.ghL()
 k=A.a([new A.I(b5,"9:19-21; 10:1-2","primary_sources/10085/10085x00010Xa_INTF.jpg"),new A.I(b6,"10:5-9","primary_sources/10085/10085x00020Xa_INTF.jpg")],c)
-i=A.fC(A.a([A.a4(["text","\ud83d\udcdc Coll. et photogr. BNU de Strasbourg (P. Gr. 1027-1028)","url","https://www.bnu.fr/fr/services-et-collections/numerisation-la-demande#les-images-de-la-bnu-et-la-licence-ouverte"],a,a),A.a4(["text","\ud83d\udcf7 INTF","url",b3],a,a)],a0),f,b,n,d,h,"P085",!1,g,"https://en.wikipedia.org/wiki/Papyrus_85",j,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10085",a1,"https://ntvmr.uni-muenster.de/manuscript-workspace?docID=10085",e,5,k,!1,"assets/images/PrimarySources/preview_10085.png",10,c8,i)
-c8=p.gRD()
+i=A.fC(A.a([A.a4(["text","\ud83d\udcdc Coll. et photogr. BNU de Strasbourg (P. Gr. 1027-1028)","url","https://www.bnu.fr/fr/services-et-collections/numerisation-la-demande#les-images-de-la-bnu-et-la-licence-ouverte"],a,a),A.a4(["text","\ud83d\udcf7 INTF","url",b3],a,a)],a0),f,b,n,d,h,"P085",!1,g,"https://en.wikipedia.org/wiki/Papyrus_85",j,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10085",a1,"https://ntvmr.uni-muenster.de/manuscript-workspace?docID=10085",e,5,k,!1,"assets/images/PrimarySources/preview_10085.png",10,c9,i)
+c9=p.gRD()
 k=p.gRz()
 e=p.gRx()
 a1=p.gRB()
@@ -117004,7 +117004,7 @@ n=p.ghe()
 b=p.gh7()
 f=p.ghL()
 l=A.a([new A.I(b6,"1:13-20","primary_sources/10098/P.IFAO_inv.237b.jpg")],c)
-c8=A.fC(A.a([A.a4(["text","\ud83d\udcdc Institut fran\xe7ais d\u2019arch\xe9ologie orientale du Caire","url","https://www.ifao.egnet.net"],a,a)],a0),h,e,d,k,g,"P098",!1,n,"https://en.wikipedia.org/wiki/Papyrus_98",b,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10098",f,"https://www.academia.edu/13166007/Another_Look_at_P.IFAO_II_31_P98_An_Updated_Transcription_and_Textual_Analysis",a1,3,l,!1,"assets/images/PrimarySources/preview_10098.png",9,j,c8)
+c9=A.fC(A.a([A.a4(["text","\ud83d\udcdc \xa9 IFAO, inv. 237b","url","https://www.ifao.egnet.net/archives-scientifiques/reproductions/reproductions-demande"],a,a)],a0),h,e,d,k,g,"P098",!1,n,"https://en.wikipedia.org/wiki/Papyrus_98",b,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=10098",f,"https://www.academia.edu/13166007/Another_Look_at_P.IFAO_II_31_P98_An_Updated_Transcription_and_Textual_Analysis",a1,3,l,!1,"assets/images/PrimarySources/preview_10098.png",9,j,c9)
 j=p.gQR()
 l=p.gQN()
 a1=p.gQL()
@@ -117068,7 +117068,7 @@ g=p.ghe()
 a1=p.gh7()
 d=p.ghL()
 a6=A.a([new A.I("1","9:7-15","primary_sources/20207/GA_0207_0001a.jpg"),new A.I("2","9:2-7","primary_sources/20207/GA_0207_0001b.jpg")],c)
-n=A.fC(A.a([A.a4(["text","\ud83d\udcdc Biblioteca Medicea Laurenziana","url","https://www.bmlonline.it"],a,a),A.a4(["text","\ud83d\udcf7 The Center for the Study of New Testament Manuscripts (www.csntm.org) digitized Uncial 0207 at the Laurentian Library","url",b4],a,a)],a0),f,a3,a4,a5,l,"U207",!1,g,"https://en.wikipedia.org/wiki/Uncial_0207",a1,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20207",d,"https://manuscripts.csntm.org/manuscript/View/GA_0207",r,2,a6,!1,"assets/images/PrimarySources/preview_20207.png",14,h,n)
+n=A.fC(A.a([A.a4(["text","\ud83d\udcdc Firenze, Biblioteca Medicea Laurenziana,  PSI 1166. Su concessione del MiC. E' vietata ogni ulteriore riproduzione con qualsiasi mezzo","url",c6],a,a),A.a4(["text","\ud83d\udcf7 The Center for the Study of New Testament Manuscripts (www.csntm.org) digitized Uncial 0207 at the Laurentian Library","url",b4],a,a)],a0),f,a3,a4,a5,l,"U207",!1,g,"https://en.wikipedia.org/wiki/Uncial_0207",a1,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20207",d,"https://manuscripts.csntm.org/manuscript/View/GA_0207",r,2,a6,!1,"assets/images/PrimarySources/preview_20207.png",14,h,n)
 h=p.gTs()
 a6=p.gTo()
 r=p.gTm()
@@ -117081,7 +117081,7 @@ a4=p.ghe()
 a3=p.gh7()
 f=p.ghL()
 a7=A.a([new A.I(b5,b7,"primary_sources/20229/PSI_XIII_1296_a_r.jpg"),new A.I(b6,"18:16-17","primary_sources/20229/PSI_XIII_1296_a_v.jpg"),new A.I("2r","19:4-6","primary_sources/20229/PSI_XIII_1296_b_r.jpg"),new A.I("2v",b7,"primary_sources/20229/PSI_XIII_1296_b_v.jpg")],c)
-h=A.fC(A.a([A.a4(["text","\ud83d\udcdc Istituto Papirologico \u201cGirolamo Vitelli\u201d","url","https://www.istitutopapirologico.unifi.it"],a,a),A.a4(["text","\ud83d\udcf7 PSIonline","url","https://psi-online.it/rightpermission"],a,a)],a0),l,r,a5,a6,g,"U229",!1,a4,"https://en.wikipedia.org/wiki/Uncial_0229",a3,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20229",f,"https://psi-online.it/documents/psi;13;1296",d,5,a7,!1,"assets/images/PrimarySources/preview_20229.png",5,a1,h)
+h=A.fC(A.a([A.a4(["text","\ud83d\udcdc Istituto Papirologico \u201cGirolamo Vitelli\u201d","url","https://www.istitutopapirologico.unifi.it"],a,a),A.a4(["text","\ud83d\udcf7 PSIonline","url",c6],a,a)],a0),l,r,a5,a6,g,"U229",!1,a4,"https://en.wikipedia.org/wiki/Uncial_0229",a3,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20229",f,"https://psi-online.it/documents/psi;13;1296",d,5,a7,!1,"assets/images/PrimarySources/preview_20229.png",5,a1,h)
 a1=p.gTI()
 a7=p.gTE()
 d=p.gTC()
@@ -117094,7 +117094,7 @@ a5=p.ghe()
 r=p.gh7()
 p=p.ghL()
 c=A.a([new A.I(b5,"11:15-16","primary_sources/20308/POxy.v0066.n4500.a.flesh.hires.jpg"),new A.I(b6,"11:17-18","primary_sources/20308/POxy.v0066.n4500.a.hair.hires.jpg")],c)
-B.b.F(q,A.a([c7,o,m,i,c8,j,b,e,k,n,h,A.fC(A.a([A.a4(["text",c1,"url",c2],a,a),A.a4(["text",c3,"url",c6],a,a)],a0),g,d,a6,a7,a4,"U308",!1,a5,"https://en.wikipedia.org/wiki/Uncial_0308",r,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20308",p,c6,f,5,c,!0,"assets/images/PrimarySources/preview_20308.png",4,a3,a1)],a2))
+B.b.F(q,A.a([c8,o,m,i,c9,j,b,e,k,n,h,A.fC(A.a([A.a4(["text",c1,"url",c2],a,a),A.a4(["text",c3,"url",c7],a,a)],a0),g,d,a6,a7,a4,"U308",!1,a5,"https://en.wikipedia.org/wiki/Uncial_0308",r,"https://ntvmr.uni-muenster.de/manuscript-catalog?docID=20308",p,c7,f,5,c,!0,"assets/images/PrimarySources/preview_20308.png",4,a3,a1)],a2))
 s.aU()},
 $S:6}
 A.aOw.prototype={
