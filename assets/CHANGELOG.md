@@ -2,6 +2,19 @@
 
 All notable changes to this application will be documented here.
 
+## [1.0.3] - Under development
+
+### Added
+
+- Uploaded primary-source images to supabase.com (P85);
+- Color theme, font size and sound in settings
+- Sounds
+
+### Changed
+
+- The application design has been completely revamped: main icon, color scheme, font "Arimo", UI icons, ...
+- About screen (Resources attributes);
+
 ## [1.0.2](https://github.com/karnauhov/Revelation/releases/tag/v1.0.2%2B80) - 31.05.25
 
 ### Added
