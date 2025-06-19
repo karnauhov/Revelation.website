@@ -221,6 +221,16 @@
             background: rgba(0,0,0,0.1);
         }
 
+        #language-select {
+            background: #667eea;
+            color: #ffd700;
+            border: 1px solid rgba(255,255,255,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             h2 { font-size: 2rem; }
@@ -232,6 +242,16 @@
     </style>
 </head>
 <body>
+    <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 10px;">
+        <img src="world.png" alt="Language" style="width: 24px; height: 24px; margin-right: 5px;">
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="ru">Русский</option>
+            <option value="uk">Українська</option>
+        </select>
+    </div>
+
     <div class="container">
         <!-- Слайд 1: Титульный -->
         <div class="slide">
@@ -536,6 +556,15 @@
         slides.forEach(slide => {
             observer.observe(slide);
         });
+
+        // Language selection function
+        document.getElementById('language-select').addEventListener('change', function() {
+            var lang = this.value;
+            window.location.href = lang + '.html';
+        });
+
+        var currentLang = document.documentElement.lang;
+        document.getElementById('language-select').value = currentLang;
     </script>
 </body>
 </html>
