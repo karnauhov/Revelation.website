@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de Revelation - aplicación para el estudio del Apocalipsis</title>
+    <link rel="icon" type="image/png" href="../favicon.png"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffed4e;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .platform-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .platform-icon:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .timeline-item {
+            background: rgba(255,255,255,0.1);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,107,107,0.4);
+        }
+
+        .mission-section {
+            background: rgba(0,0,0,0.2);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 2px solid rgba(255,215,0,0.3);
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background: #ffd700;
+            transform: scale(1.2);
+        }
+
+        .slide:nth-child(even) {
+            background: rgba(0,0,0,0.1);
+        }
+
+        #language-select {
+            background: #667eea;
+            color: #ffd700;
+            border: 1px solid rgba(255,255,255,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            p { font-size: 1.1rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .platform-icons { gap: 1rem; }
+            .platform-icon { width: 60px; height: 60px; font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 10px;">
+        <img src="world.png" alt="Idioma" style="width: 24px; height: 24px; margin-right: 5px;">
+        <select id="language-select"></select>
+    </div>
+
+    <div class="container">
+        <!-- Slide 1: Título -->
+        <div class="slide">
+            <a href="../index.html" target="_blank"><img src="\assets\assets\images\UI\app_icon.png" width="80%"></a>
+            <h1><a href="../index.html" target="_blank">REVELATION</a></h1>
+            <p class="subtitle">Aplicación para el estudio profundo del Libro del Apocalipsis.</p>
+            <p>Este es un proyecto educativo y misionero de código abierto, destinado a desmitificar uno de los libros más complejos y a menudo malinterpretados de la Biblia: el Libro del Apocalipsis.</p>
+        </div>
+
+        <!-- Slide 2: Problema y solución -->
+        <div class="slide">
+            <h2>Problema y solución</h2>
+            <p>A la luz de los eventos recientes, cada vez más personas muestran interés en las profecías finales descritas en el Apocalipsis.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>❓ Problema</h3>
+                    <p>El Libro del Apocalipsis es uno de los libros más difíciles de entender de la Biblia. La multitud de símbolos, profecías e imágenes requiere un estudio profundo. Pero esto parece una tarea complicada, considerando las diferencias en doctrinas, culturas, costumbres, generaciones e incluso traducciones de la Biblia.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Solución</h3>
+                    <p>El concepto principal de la aplicación Revelation es proporcionar a los usuarios una herramienta estructurada, autorizada y accesible tanto para familiarizarse con el Libro del Apocalipsis como para su estudio profundo, evitando al mismo tiempo interpretaciones especulativas y no basadas en la Biblia.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Metodología -->
+        <div class="slide">
+            <h2>Metodología científica</h2>
+            <div class="feature-card">
+                <h3>📚 Base del estudio</h3>
+                <p>La metodología se basa en el principio expuesto al principio del libro. El principio indica la importancia de leer, escuchar y observar lo escrito en el Apocalipsis.</p>
+                <p>• <u>Lectura</u> se presenta en 2 etapas: <b>lectura</b> de las fuentes originales y un completo análisis <b>gramatical y sintáctico</b> de lo escrito.<br>
+                • <u>Escucha (que conduce a la comprensión)</u> se presenta en 3 etapas importantes, tomadas del libro del teólogo y especialista en el Libro del Apocalipsis, <a href="https://en.wikipedia.org/wiki/Jon_Paulien" target="_blank">Jon Paulien</a>, "Las profundidades de Dios". Incluyen: identificar y analizar las <b>alusiones</b> del Antiguo Testamento, ver los textos a la luz de la vida y el ministerio de <b>Jesucristo</b>, y buscar <b>estructuras y conexiones</b> con otros lugares en el Apocalipsis y en toda la Biblia.<br>
+                • <u>Observancia</u> se presenta en 2 etapas: comprender cómo y qué profecías se han cumplido en la <b>historia</b> de la iglesia y de toda la humanidad, y cuáles aún esperan su cumplimiento. También la última, pero una de las etapas más importantes, está dirigida a que cada uno mire su <b>vida</b> a la luz de lo leído y comprendido, para que tome una decisión sobre si vale la pena cambiar algo en ella.</p>
+            </div>
+            <p></p>
+            <img src="../assets/assets/images/Topics/preface3.jpg" width="50%">
+            <p></p>
+            <div class="feature-card">
+                <h3>👨‍🏫 Equipo de autores</h3>
+                <p>Para implementar esta metodología, se planea involucrar a un gran número de lingüistas, teólogos, historiadores, pastores y otros ministros. Cada uno de ellos podría preparar textos de comentarios "breves" y "profundos" correspondientes a su etapa de calificación de uno de los pasajes del Apocalipsis.</p>
+                <p>El texto "breve" podría estar escrito en un estilo simple y de pequeño volumen para un público más amplio. El texto "profundo" ya puede ser mucho más extenso y contener terminología más específica para aquellos que deseen profundizar su comprensión.</p>
+                <p>Los desarrolladores y diseñadores podrían proporcionar los textos con diversos materiales de audio y visuales para facilitar la lectura y la asimilación.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Ventajas tecnológicas -->
+        <div class="slide">
+            <h2>Ventajas tecnológicas</h2>
+            <div class="feature-card">
+                <a href="https://flutter.dev/" target="_blank"><img src="../assets/assets/images/UI/lib_flutter.svg" width="64"></a>
+                <h3><a href="https://flutter.dev/" target="_blank">Flutter Framework</a></h3>
+                <p>La aplicación Revelation está construida sobre el moderno framework Flutter de Google. Esto significa que escribimos el código una vez y lo ejecutamos en todas partes: en teléfonos, tabletas, PC y en navegadores. De esta manera, un equipo de desarrolladores mantiene todo el espectro de dispositivos, en lugar de seis equipos separados trabajando en sus propias aplicaciones. En todas las plataformas, la aplicación se ve igual: en web, Android, iOS, Windows, Mac o incluso Linux: un diseño unificado y un excelente rendimiento.</p>
+            </div>
+            <div class="platform-icons">
+                <div class="platform-icon" title="Web"><a href="https://www.revelation.website" target="_blank"><img src="web.svg" width="48"></a></div>
+                <div class="platform-icon" title="Android"><a href="https://play.google.com/store/apps/details?id=ai11.link.revelation" target="_blank"><img src="android.svg" width="48"></a></div>
+                <div class="platform-icon" title="Windows"><a href="https://apps.microsoft.com/detail/9nxhrr2p4087" target="_blank"><img src="windows.svg" width="48"></a></div>
+                <div class="platform-icon" title="Linux (próximamente)"><img src="linux.svg" width="48"></div>
+                <div class="platform-icon" title="iOS (próximamente)"><img src="ios.svg" width="48"></div>
+                <div class="platform-icon" title="macOS (próximamente)"><img src="macos.svg" width="48"></div>
+            </div>
+            <p><strong>6 plataformas</strong> simultáneamente con costos mínimos de desarrollo</p>
+        </div>
+
+        <!-- Slide 5: Alcance de la audiencia -->
+        <div class="slide">
+            <h2>Audiencia potencial <br> 2/3 de la población del planeta</h2>
+            <img src="users_per_platform.png" width="70%">
+            <p>Cobertura aproximada de usuarios a través de la multiplataforma<br>
+            Investigaciones realizadas con la ayuda de: <a href="https://chatgpt.com/share/68527de2-58cc-8008-949b-e810119f42a1" target="_blank">ChatGPT</a>, <a href="https://grok.com/share/bGVnYWN5_c5546ed0-083a-4386-bfe2-9c33a5bf622a" target="_blank">Grok3</a>, <a href="https://www.perplexity.ai/search/nuzhno-provesti-issledovanie-o-wylcsw9wQzaXwrIJdNGIdg?0=d" target="_blank">Perplexity</a></p>
+        </div>
+
+        <!-- Slide 6: Localización -->
+        <div class="slide">
+            <h2>Soporte multilingüe</h2>
+            <div class="feature-card">
+                <h3>🌍 Localización global</h3>
+                <p>Uso de IA para la traducción inicial</p>
+                <p>Verificación y corrección por hablantes nativos</p>
+                <p>Máximo número de idiomas para cobertura global</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤖 Traducción por IA</h3>
+                    <p>Creación rápida de traducciones básicas de bastante buena calidad utilizando modelos de lenguaje grandes de IA avanzados</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👥 Comunidad</h3>
+                    <p>Formación de una comunidad de hablantes de diversos idiomas para verificar y mejorar las traducciones de la interfaz y los comentarios</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Plan de desarrollo -->
+        <div class="slide">
+            <h2>Plan de desarrollo</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Fase 1: Preparatoria (actual)</h3>
+                    <p>👍 Funcionalidad básica para mostrar fuentes primarias y para mantener el contenido textual y gráfico de los comentarios<br>
+                    📜 Prefacio<br>
+                    🌍 Inglés, Ruso, Ucraniano<br>
+                    💻 Web, Android, Windows, Linux, iOS, macOS<br>
+                    📢 Búsqueda de patrocinadores, desarrolladores, diseñadores y probadores<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 2: Prólogo</h3>
+                    <p>👍 Funcionalidad avanzada para trabajar con fuentes primarias (etapa 1)<br>
+                    📜 Apocalipsis 1:1–8<br>
+                    🌍 Principales idiomas europeos<br>
+                    📢 Búsqueda de patrocinadores, académicos, teólogos, ministros y hablantes nativos<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 3: Siete Iglesias</h3>
+                    <p>👍 Funcionalidad avanzada para trabajar con el diccionario y la estructura de las oraciones (etapa 2)<br>
+                    📜 Apocalipsis 1:9–3:22<br>
+                    🌍 Principales idiomas asiáticos<br>
+                    📢 Búsqueda de hablantes nativos<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 4: Siete Sellos</h3>
+                    <p>👍 Funcionalidad avanzada para buscar y analizar alusiones y referencias (etapa 3)<br>
+                    📜 Apocalipsis 4:1–8:1<br>
+                    🌍 Principales idiomas africanos<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en América del Norte<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 5: Siete Trompetas</h3>
+                    <p>👍 Funcionalidad avanzada para ayudar a comprender cómo cada sección apunta a la persona y el ministerio de Cristo (etapa 4)<br>
+                    📜 Apocalipsis 8:2–11:18<br>
+                    🌍 Idiomas "no europeos" de América del Sur y del Norte<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en Europa<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 6: La última crisis</h3>
+                    <p>👍 Funcionalidad avanzada para estudiar y relacionar pasajes con estructuras identificadas, análisis de conexiones con otros libros del Nuevo Testamento, el Libro de Daniel, el Antiguo Testamento y la Biblia en general (etapa 5)<br>
+                    📜 Apocalipsis 11:19–15:4<br>
+                    🌍 Idiomas "no europeos" de Australia y Oceanía<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en Asia<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 7: Siete Copas</h3>
+                    <p>👍 Funcionalidad avanzada para trabajar con hechos históricos, escalas cronológicas, etc. (etapa 6)<br>
+                    📜 Apocalipsis 15:5–18:24<br>
+                    🌍 Idiomas europeos adicionales<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en África<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 8: El Reino Milenario</h3>
+                    <p>👍 Funcionalidad avanzada para extraer lecciones espirituales para la vida personal, llevar diarios espirituales, etc. (etapa 7)<br>
+                    📜 Apocalipsis 19:1–20:15<br>
+                    🌍 Idiomas asiáticos adicionales<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en América del Sur<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 9: La Nueva Jerusalén</h3>
+                    <p>👍 Funcionalidad avanzada para soportar contenido multimedia en comentarios para cada pasaje<br>
+                    📜 Apocalipsis 21:1–22:5<br>
+                    🌍 Idiomas africanos adicionales<br>
+                    📢 Búsqueda de hablantes nativos. Publicidad en Australia y Oceanía<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Fase 10: Epílogo</h3>
+                    <p>📜 Apocalipsis 22:6–21<br>
+                    🌍 Otros idiomas de minorías étnicas<br>
+                    📢 Búsqueda de hablantes nativos. Campañas publicitarias globales y locales<br></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Aspecto misionero -->
+        <div class="slide">
+            <div class="mission-section">
+                <h2>🕊️ Proyecto misionero</h2>
+                <h3>"Id y enseñad a todas las naciones"</h3>
+                <p>Esto no es solo una aplicación, es un ambicioso proyecto misionero de escala global.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="3angels.png" width="48" height="48">
+                        <h3>El mensaje de los tres ángeles</h3>
+                        <p>Estudio de las profecías más importantes del libro del Apocalipsis, incluyendo el mensaje de los tres ángeles</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="world.png" width="48" height="48">
+                        <h3>Cobertura mundial</h3>
+                        <p>Familiarización de cristianos de todas las denominaciones, representantes de otras religiones e incluso no creyentes con el mensaje del Apocalipsis</p>
+                    </div>
+                </div>
+                
+                <p>Se planea utilizar en futuras campañas evangélicas y publicitarias en todo el mundo para la máxima difusión del mensaje de Dios.</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Llamado a la acción -->
+        <div class="slide">
+            <h2>Únete al proyecto</h2>
+            <p>La aplicación Revelation combinará tecnologías avanzadas y un profundo trabajo teológico para hacer que el Libro del Apocalipsis sea accesible para todos. Te invitamos a apoyar el proyecto y unirte a su misión de difundir una comprensión clara del Libro del Apocalipsis.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤝 Cómo puedes ayudar</h3>
+                    <p>• 🙏 Orar por nosotros<br>
+                    • 📢 Compartir <a href="https://www.revelation.website/demo/es.html" target="_blank">este enlace</a><br>
+                    • 💳 Convertirse en patrocinador<br>
+                    • 👨‍💻 Participar en el desarrollo<br>
+                    • 📐 Probar la aplicación<br>
+                    • 📝 Llenar con contenido<br>
+                    • 🌍 Participar en traducciones<br></p>
+                </div>
+                <div class="feature-card">
+                    <h3>📩 Contactos</h3>
+                    <p>Telegram: <a href="https://t.me/karnauhov" target="_blank">@karnauhov</a><br>
+                    Correo: <a href="mailto:karnauhov.oleg@gmail.com" target="_blank">karnauhov.oleg@gmail.com</a><br>
+                    Teléfono: +38(067)787-2617</p>
+                </div>
+            </div>
+            
+            <a href="https://github.com/karnauhov/Revelation" target="_blank" class="cta-button">Proyecto en GitHub</a>
+            <a href="../index.html" target="_blank" class="cta-button">Ver la versión actual</a>
+            <p>🙏 Muchas gracias por tu interés 🙏</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="nav-dot active" onclick="scrollToSlide(0)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(1)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(2)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(3)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(4)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(5)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(6)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(7)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(8)"></div>
+    </div>
+
+    <script>
+        async function loadLanguages() {
+            try {
+                const response = await fetch('languages.json');
+                const languages = await response.json();
+                const select = document.getElementById('language-select');
+                languages.forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang.code;
+                    option.textContent = lang.name;
+                    select.appendChild(option);
+                });
+                const currentLang = document.documentElement.lang;
+                select.value = currentLang;
+            } catch (error) {
+                console.error('Error loading languages:', error);
+            }
+        }
+        loadLanguages();
+
+        const slides = document.querySelectorAll('.slide');
+        const navDots = document.querySelectorAll('.nav-dot');
+        let currentSlide = 0;
+
+        function scrollToSlide(index) {
+            slides[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            navDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            
+            currentSlide = index;
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                if (currentSlide < slides.length - 1) {
+                    scrollToSlide(currentSlide + 1);
+                }
+            } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                if (currentSlide > 0) {
+                    scrollToSlide(currentSlide - 1);
+                }
+            }
+        });
+
+        // Update navigation on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            slides.forEach((slide, index) => {
+                const slideTop = slide.offsetTop;
+                const slideBottom = slideTop + slide.offsetHeight;
+                
+                if (scrollPosition >= slideTop - windowHeight/2 && 
+                    scrollPosition < slideBottom - windowHeight/2) {
+                    navDots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                    currentSlide = index;
+                }
+            });
+        });
+
+        // Smooth animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        slides.forEach(slide => {
+            observer.observe(slide);
+        });
+
+        // Language selection function
+        document.getElementById('language-select').addEventListener('change', function() {
+            var lang = this.value;
+            window.location.href = lang + '.html';
+        });
+    </script>
+</body>
+</html>
