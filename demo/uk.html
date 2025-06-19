@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Презентація Revelation - додатку для вивчення Об'явлення</title>
+    <link rel="icon" type="image/png" href="../favicon.png"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #ffd700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffed4e;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .platform-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .platform-icon:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .timeline-item {
+            background: rgba(255,255,255,0.1);
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,107,107,0.4);
+        }
+
+        .mission-section {
+            background: rgba(0,0,0,0.2);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 2px solid rgba(255,215,0,0.3);
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot.active {
+            background: #ffd700;
+            transform: scale(1.2);
+        }
+
+        .slide:nth-child(even) {
+            background: rgba(0,0,0,0.1);
+        }
+
+        #language-select {
+            background: #667eea;
+            color: #ffd700;
+            border: 1px solid rgba(255,255,255,0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            p { font-size: 1.1rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .platform-icons { gap: 1rem; }
+            .platform-icon { width: 60px; height: 60px; font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 10px;">
+        <img src="world.png" alt="Мова" style="width: 24px; height: 24px; margin-right: 5px;">
+        <select id="language-select"></select>
+    </div>
+
+    <div class="container">
+        <!-- Слайд 1: Титульний -->
+        <div class="slide">
+            <a href="../index.html" target="_blank"><img src="\assets\assets\images\UI\app_icon.png" width="80%"></a>
+            <h1><a href="../index.html" target="_blank">REVELATION</a></h1>
+            <p class="subtitle">Додаток для глибокого вивчення Книги Об'явлення.</p>
+            <p>Це освітній та місіонерський проект з відкритим вихідним кодом, спрямований на демістифікацію однієї з найскладніших і часто неправильно тлумачених книг Біблії — Книги Об'явлення.</p>
+        </div>
+
+        <!-- Слайд 2: Проблема та рішення -->
+        <div class="slide">
+            <h2>Проблема та рішення</h2>
+            <p>У світлі останніх подій все більше людей виявляють інтерес до заключних пророцтв, описаних в Об'явленні.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>❓ Проблема</h3>
+                    <p>Книга Об'явлення - одна з найскладніших для розуміння книг Біблії. Безліч символів, пророцтв та образів вимагають глибокого вивчення. Але це здається непростим завданням, враховуючи відмінності в доктринах, культурах, звичаях, поколіннях і навіть перекладах Біблії.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Рішення</h3>
+                    <p>Основна концепція додатку Revelation полягає в наданні користувачам структурованого, авторитетного та доступного інструменту як для ознайомлення з Книгою Об'явлення, так і для її глибокого вивчення, уникаючи при цьому спекулятивних і не заснованих на Біблії тлумачень.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Слайд 3: Методологія -->
+        <div class="slide">
+            <h2>Наукова методологія</h2>
+            <div class="feature-card">
+                <h3>📚 Основа вивчення</h3>
+                <p>Методологія ґрунтується на принципі, викладеному на самому початку книги. Принцип вказує на важливість читання, слухання та дотримання написаного в Об'явленні.</p>
+                <p>• <u>Читання</u> представлено 2 етапами: <b>прочитання</b> оригінальних першоджерел, і повний граматичний та синтаксичний <b>розбір</b> написаного.<br>
+                • <u>Слухання (що веде до розуміння)</u> представлено 3 важливими етапами, взятими з книги богослова та спеціаліста з Книги Об'явлення, <a href="https://en.wikipedia.org/wiki/Jon_Paulien" target="_blank">Джона Пауліна</a> "Глибини Божі". Вони включають: виявлення та аналіз старозавітних <b>алюзій</b>, погляд на тексти у світлі життя та служіння <b>Ісуса Христа</b>, пошук <b>структур та зв'язків</b> з іншими місцями в Об'явленні та всій Біблії.<br> 
+                • <u>Дотримання</u> представлено 2 етапами: розуміння того, як і які пророцтва здійснилися в <b>історії</b> церкви та всього людства, а які ще чекають на здійснення. Також останній, але один з найважливіших етапів, спрямований на те, щоб кожен зазирнув у <b>своє життя</b> у світлі прочитаного та зрозумілого, щоб прийняв рішення про те, чи варто щось змінити в ньому.</p>
+            </div>
+            <p></p>
+            <img src="../assets/assets/images/Topics/preface3.jpg" width="50%">
+            <p></p>
+            <div class="feature-card">
+                <h3>👨‍🏫 Авторський колектив</h3>
+                <p>Для реалізації даної методології планується залучити велику кількість вчених лінгвістів, богословів, істориків, пасторів та інших служителів. Кожен з них міг би підготувати "короткий" та "поглиблений" тексти коментарів, що відповідають його кваліфікації, для одного з уривків Об'явлення.</p>
+                <p>"Короткий" текст міг би бути написаний у простій стилістиці та невеликим за обсягом для ширшої аудиторії. "Поглиблений" текст вже може бути набагато більшим за обсягом і містити спеціалізовану термінологію для тих, хто бажає поглибити своє розуміння.</p>
+                <p>Розробники та дизайнери змогли б забезпечити тексти різними аудіо та візуальними матеріалами для полегшення читання та засвоєння.</p>
+            </div>
+        </div>
+
+        <!-- Слайд 4: Технологічні переваги -->
+        <div class="slide">
+            <h2>Технологічні переваги</h2>
+            <div class="feature-card">
+                <a href="https://flutter.dev/" target="_blank"><img src="../assets/assets/images/UI/lib_flutter.svg" width="64"></a>
+                <h3><a href="https://flutter.dev/" target="_blank">Flutter Framework</a></h3>
+                <p>Додаток Revelation побудований на сучасному фреймворку Flutter від Google. Це означає, що ми пишемо код один раз і запускаємо його всюди – на телефонах, планшетах, ПК та в браузерах. Таким чином, одна команда розробників підтримує весь спектр пристроїв, а не шість окремих команд працюють над своїми додатками. На всіх платформах додаток виглядає однаково: у web, на Android, iOS, Windows, Mac або навіть Linux – єдиний дизайн та відмінна продуктивність.</p>
+            </div>
+            <div class="platform-icons">
+                <div class="platform-icon" title="Web"><a href="https://www.revelation.website" target="_blank"><img src="web.svg" width="48"></a></div>
+                <div class="platform-icon" title="Android"><a href="https://play.google.com/store/apps/details?id=ai11.link.revelation" target="_blank"><img src="android.svg" width="48"></a></div>
+                <div class="platform-icon" title="Windows"><a href="https://apps.microsoft.com/detail/9nxhrr2p4087" target="_blank"><img src="windows.svg" width="48"></a></div>
+                <div class="platform-icon" title="Linux (скоро)"><img src="linux.svg" width="48"></div>
+                <div class="platform-icon" title="iOS (скоро)"><img src="ios.svg" width="48"></div>
+                <div class="platform-icon" title="macOS (скоро)"><img src="macos.svg" width="48"></div>
+            </div>
+            <p><strong>6 платформ</strong> одночасно з мінімальними витратами на розробку</p>
+        </div>
+
+        <!-- Слайд 5: Охоплення аудиторії -->
+        <div class="slide">
+            <h2>Потенційна аудиторія <br> 2/3 населення планети</h2>
+            <img src="users_per_platform.png" width="70%">
+            <p>Приблизне охоплення користувачів через кросплатформенність<br>
+            Дослідження проведені за допомогою: <a href="https://chatgpt.com/share/68527de2-58cc-8008-949b-e810119f42a1" target="_blank">ChatGPT</a>, <a href="https://grok.com/share/bGVnYWN5_c5546ed0-083a-4386-bfe2-9c33a5bf622a" target="_blank">Grok3</a>, <a href="https://www.perplexity.ai/search/nuzhno-provesti-issledovanie-o-wylcsw9wQzaXwrIJdNGIdg?0=d" target="_blank">Perplexity</a></p>
+        </div>
+
+        <!-- Слайд 6: Локалізація -->
+        <div class="slide">
+            <h2>Багатомовна підтримка</h2>
+            <div class="feature-card">
+                <h3>🌍 Глобальна локалізація</h3>
+                <p>Використання ШІ для первинного перекладу</p>
+                <p>Перевірка та коригування носіями мови</p>
+                <p>Максимальна кількість мов для глобального охоплення</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤖 ШІ-переклад</h3>
+                    <p>Швидке створення досить якісних базових перекладів з використанням передових великих мовних моделей ШІ</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👥 Спільнота</h3>
+                    <p>Формування спільноти носіїв різних мов для перевірки та покращення перекладів інтерфейсу та коментарів</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Слайд 7: Дорожня карта -->
+        <div class="slide">
+            <h2>План розвитку</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Фаза 1: Підготовча (поточна)</h3>
+                    <p>👍 Базовий функціонал для показу першоджерел, і для підтримки текстового та графічного вмісту коментарів<br>
+                    📜 Передмова<br>
+                    🌍 Англійська, Російська, Українська<br>
+                    💻 Web, Android, Windows, Linux, iOS, macOS<br>
+                    📢 Пошук спонсорів, розробників, дизайнерів та тестерів<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 2: Пролог</h3>
+                    <p>👍 Просунутий функціонал для роботи з першоджерелами (етап 1)<br>
+                    📜 Об'явлення 1:1–8<br>
+                    🌍 Основні європейські мови<br>
+                    📢 Пошук спонсорів, вчених, богословів, служителів та носіїв мов<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 3: Сім Церков</h3>
+                    <p>👍 Просунутий функціонал для роботи зі словником та структурою речень (етап 2)<br>
+                    📜 Об'явлення 1:9–3:22<br>
+                    🌍 Основні азіатські мови<br>
+                    📢 Пошук носіїв мов<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 4: Сім Печаток</h3>
+                    <p>👍 Просунутий функціонал для пошуку та аналізу алюзій та посилань (етап 3)<br>
+                    📜 Об'явлення 4:1–8:1<br>
+                    🌍 Основні африканські мови<br>
+                    📢 Пошук носіїв мов. Реклама в Північній Америці<br></p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 5: Сім Труб</h3>
+                    <p>👍 Просунутий функціонал для допомоги в розумінні, як кожний розділ вказує на особистість та служіння Христа (етап 4)<br>
+                    📜 Об'явлення 8:2–11:18<br>
+                    🌍 "Не європейські" мови Південної та Північної Америк<br>
+                    📢 Пошук носіїв мов. Реклама в Європі<br></p>                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 6: Остання криза</h3>
+                    <p>👍 Просунутий функціонал для вивчення та співвіднесення уривків з виявленими структурами, аналіз зв'язків з іншими книгами Нового Заповіту, Книгою Даниїла, Старим Заповітом та Біблією в цілому (етап 5)<br>
+                    📜 Об'явлення 11:19–15:4<br>
+                    🌍 "Не європейські" мови Австралії та Океанії<br>
+                    📢 Пошук носіїв мов. Реклама в Азії<br></p>                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 7: Сім Чаш</h3>
+                    <p>👍 Просунутий функціонал для роботи з історичними фактами, хронологічні шкали тощо (етап 6)<br>
+                    📜 Об'явлення 15:5–18:24<br>
+                    🌍 Додаткові європейські мови<br>
+                    📢 Пошук носіїв мов. Реклама в Африці<br></p>                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 8: Тисячолітнє Царство</h3>
+                    <p>👍 Просунутий функціонал для виявлення духовних уроків для особистого життя, ведення духовних щоденників тощо (етап 7)<br>
+                    📜 Об'явлення 19:1–20:15<br>
+                    🌍 Додаткові азіатські мови<br>
+                    📢 Пошук носіїв мов. Реклама в Південній Америці<br></p>                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 9: Новий Єрусалим</h3>
+                    <p>👍 Просунутий функціонал для підтримки мультимедійного вмісту в коментарях на кожний уривок<br>
+                    📜 Об'явлення 21:1–22:5<br>
+                    🌍 Додаткові африканські мови<br>
+                    📢 Пошук носіїв мов. Реклама в Австралії та Океанії<br></p>                    
+                </div>
+                <div class="timeline-item">
+                    <h3>Фаза 10: Епілог</h3>
+                    <p>📜 Об'явлення 22:6–21<br>
+                    🌍 Інші мови малих народностей<br>
+                    📢 Пошук носіїв мов. Глобальні та локальні рекламні кампанії<br></p>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Слайд 8: Місіонерський аспект -->
+        <div class="slide">
+            <div class="mission-section">
+                <h2>🕊️ Місіонерський проект</h2>
+                <h3>"Ідіть і навчайте всі народи"</h3>
+                <p>Це не просто додаток - це амбітний місіонерський проект глобального масштабу.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="3angels.png" width="48" height="48">
+                        <h3>Триангельська вість</h3>
+                        <p>Вивчення найважливіших пророцтв книги Об'явлення, включаючи вісті трьох ангелів</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="world.png" width="48" height="48">
+                        <h3>Всесвітнє охоплення</h3>
+                        <p>Ознайомлення християн усіх конфесій, представників інших релігій і навіть невіруючих з вістю Об'явлення</p>
+                    </div>
+                </div>
+                
+                <p>Планується використання в майбутніх євангельських та рекламних кампаніях по всьому світу для максимального поширення Божої вісті.</p>
+            </div>
+        </div>
+
+        <!-- Слайд 9: Заклик до дії -->
+        <div class="slide">
+            <h2>Приєднуйтесь до проекту</h2>
+            <p>Додаток Revelation поєднуватиме передові технології та глибоку богословську роботу, щоб зробити Книгу Об'явлення доступною для всіх. Ми запрошуємо вас підтримати проект і приєднатися до його місії з поширення ясного розуміння Книги Об'явлення.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤝 Як ви можете допомогти</h3>
+                    <p>• 🙏 Молитися за нас<br>
+                    • 📢 Поділитися <a href="https://www.revelation.website/demo/uk.html" target="_blank">цим посиланням</a><br>
+                    • 💳 Стати спонсором<br>
+                    • 👨‍💻 Брати участь у розробці<br>
+                    • 📐 Тестувати додаток<br>
+                    • 📝 Наповнювати контентом<br>
+                    • 🌍 Брати участь у перекладах<br></p>
+                </div>
+                <div class="feature-card">
+                    <h3>📩 Контакти</h3>
+                    <p>Телеграм: <a href="https://t.me/karnauhov" target="_blank">@karnauhov</a><br>
+                    Пошта: <a href="mailto:karnauhov.oleg@gmail.com" target="_blank">karnauhov.oleg@gmail.com</a><br>
+                    Телефон: +38(067)787-2617</p>
+                </div>
+            </div>
+            
+            <a href="https://github.com/karnauhov/Revelation" target="_blank" class="cta-button">Проект на GitHub</a>
+            <a href="../index.html" target="_blank" class="cta-button">Переглянути поточну версію</a>
+            <p>🙏 Велика подяка вам за виявлений інтерес 🙏</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="nav-dot active" onclick="scrollToSlide(0)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(1)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(2)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(3)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(4)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(5)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(6)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(7)"></div>
+        <div class="nav-dot" onclick="scrollToSlide(8)"></div>
+    </div>
+
+    <script>
+        async function loadLanguages() {
+            try {
+                const response = await fetch('languages.json');
+                const languages = await response.json();
+                const select = document.getElementById('language-select');
+                languages.forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang.code;
+                    option.textContent = lang.name;
+                    select.appendChild(option);
+                });
+                const currentLang = document.documentElement.lang;
+                select.value = currentLang;
+            } catch (error) {
+                console.error('Error loading languages:', error);
+            }
+        }
+        loadLanguages();
+
+        const slides = document.querySelectorAll('.slide');
+        const navDots = document.querySelectorAll('.nav-dot');
+        let currentSlide = 0;
+
+        function scrollToSlide(index) {
+            slides[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            navDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            
+            currentSlide = index;
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                if (currentSlide < slides.length - 1) {
+                    scrollToSlide(currentSlide + 1);
+                }
+            } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                if (currentSlide > 0) {
+                    scrollToSlide(currentSlide - 1);
+                }
+            }
+        });
+
+        // Update navigation on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            
+            slides.forEach((slide, index) => {
+                const slideTop = slide.offsetTop;
+                const slideBottom = slideTop + slide.offsetHeight;
+                
+                if (scrollPosition >= slideTop - windowHeight/2 && 
+                    scrollPosition < slideBottom - windowHeight/2) {
+                    navDots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                    currentSlide = index;
+                }
+            });
+        });
+
+        // Smooth animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        slides.forEach(slide => {
+            observer.observe(slide);
+        });
+
+        // Language selection function
+        document.getElementById('language-select').addEventListener('change', function() {
+            var lang = this.value;
+            window.location.href = lang + '.html';
+        });
+    </script>
+</body>
+</html>
