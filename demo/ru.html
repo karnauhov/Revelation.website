@@ -244,12 +244,7 @@
 <body>
     <div style="display: flex; align-items: center; margin-bottom: 10px; margin-left: 10px;">
         <img src="world.png" alt="Language" style="width: 24px; height: 24px; margin-right: 5px;">
-        <select id="language-select">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="ru">Русский</option>
-            <option value="uk">Українська</option>
-        </select>
+        <select id="language-select"></select>
     </div>
 
     <div class="container">
@@ -490,6 +485,25 @@
     </div>
 
     <script>
+        async function loadLanguages() {
+            try {
+                const response = await fetch('languages.json');
+                const languages = await response.json();
+                const select = document.getElementById('language-select');
+                languages.forEach(lang => {
+                    const option = document.createElement('option');
+                    option.value = lang.code;
+                    option.textContent = lang.name;
+                    select.appendChild(option);
+                });
+                const currentLang = document.documentElement.lang;
+                select.value = currentLang;
+            } catch (error) {
+                console.error('Error loading languages:', error);
+            }
+        }
+        loadLanguages();
+
         const slides = document.querySelectorAll('.slide');
         const navDots = document.querySelectorAll('.nav-dot');
         let currentSlide = 0;
@@ -562,9 +576,6 @@
             var lang = this.value;
             window.location.href = lang + '.html';
         });
-
-        var currentLang = document.documentElement.lang;
-        document.getElementById('language-select').value = currentLang;
     </script>
 </body>
 </html>
