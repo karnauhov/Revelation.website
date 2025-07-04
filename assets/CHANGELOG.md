@@ -2,12 +2,12 @@
 
 All notable changes to this application will be documented here.
 
-## [1.0.3] - Under development
+## [1.0.3](https://github.com/karnauhov/Revelation/releases/tag/v1.0.3%2B113) - 04.07.25
 
 ### Added
 
 - Support languages: Spanish;
-- Support platforms: [Linux](https://snapcraft.io/revelation);
+- Support platforms: [Linux](https://snapcraft.io/revelation-x);
 - Uploaded primary-source images to supabase.com (P85);
 - Color theme, font size and sound in settings;
 - Sounds;
