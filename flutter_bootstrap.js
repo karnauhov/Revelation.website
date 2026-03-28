@@ -116,7 +116,7 @@ _flutter.buildConfig = {"engineRevision":"78fc3012e45889657f72359b005af7beac47ba
   _flutter.loader.load({
     serviceWorkerSettings: {
       serviceWorkerVersion: String(
-          '"891180272"'.replace(/^"|"$/g, '')),
+          '"2869198973"'.replace(/^"|"$/g, '')),
     },
     onEntrypointLoaded: async function (engineInitializer) {
       try {
