@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-04-04T07:00:00Z",
+  "estimated_startup_total_bytes": 4839881,
+  "navigation_document": {
+    "path": "index.html",
+    "size_bytes": 1807,
+    "raw_size_bytes": 6029,
+    "gzip_size_bytes": 1807
+  },
+  "required_resources": [
+    {
+      "path": "assets/FontManifest.json",
+      "size_bytes": 161,
+      "raw_size_bytes": 291,
+      "gzip_size_bytes": 161
+    },
+    {
+      "path": "assets/assets/fonts/Arimo/Arimo.ttf",
+      "size_bytes": 305453,
+      "raw_size_bytes": 500516,
+      "gzip_size_bytes": 305453
+    },
+    {
+      "path": "assets/assets/images/UI/startup_splash_banner.jpg",
+      "size_bytes": 134007,
+      "raw_size_bytes": 134007
+    },
+    {
+      "path": "assets/fonts/MaterialIcons-Regular.otf",
+      "size_bytes": 7067,
+      "raw_size_bytes": 13212,
+      "gzip_size_bytes": 7067
+    },
+    {
+      "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "size_bytes": 1011,
+      "raw_size_bytes": 1472,
+      "gzip_size_bytes": 1011
+    },
+    {
+      "path": "favicon.png",
+      "size_bytes": 2382,
+      "raw_size_bytes": 2382
+    },
+    {
+      "path": "flutter_bootstrap.js",
+      "size_bytes": 12272,
+      "raw_size_bytes": 52031,
+      "gzip_size_bytes": 12272
+    },
+    {
+      "path": "icons/Icon-192.png",
+      "size_bytes": 18701,
+      "raw_size_bytes": 18701
+    },
+    {
+      "path": "loader_manifest.json",
+      "size_bytes": 909,
+      "raw_size_bytes": 4672,
+      "gzip_size_bytes": 909
+    },
+    {
+      "path": "main.dart.js",
+      "size_bytes": 1413898,
+      "raw_size_bytes": 5076952,
+      "gzip_size_bytes": 1413898
+    },
+    {
+      "path": "manifest.json",
+      "size_bytes": 303,
+      "raw_size_bytes": 948,
+      "gzip_size_bytes": 303
+    },
+    {
+      "path": "version.json",
+      "size_bytes": 88,
+      "raw_size_bytes": 92,
+      "gzip_size_bytes": 88
+    }
+  ],
+  "optional_groups": [
+    {
+      "id": "pwa_icon",
+      "max_candidate_bytes": 58039,
+      "candidates": [
+        {
+          "path": "icons/Icon-192.png",
+          "size_bytes": 18701,
+          "raw_size_bytes": 18701
+        },
+        {
+          "path": "icons/Icon-512.png",
+          "size_bytes": 58039,
+          "raw_size_bytes": 58039
+        },
+        {
+          "path": "icons/Icon-maskable-192.png",
+          "size_bytes": 18701,
+          "raw_size_bytes": 18701
+        },
+        {
+          "path": "icons/Icon-maskable-512.png",
+          "size_bytes": 58039,
+          "raw_size_bytes": 58039
+        }
+      ]
+    },
+    {
+      "id": "asset_manifest",
+      "max_candidate_bytes": 5565,
+      "candidates": [
+        {
+          "path": "assets/AssetManifest.bin",
+          "size_bytes": 5565,
+          "raw_size_bytes": 5565
+        },
+        {
+          "path": "assets/AssetManifest.bin.json",
+          "size_bytes": 1670,
+          "raw_size_bytes": 7422,
+          "gzip_size_bytes": 1670
+        }
+      ]
+    },
+    {
+      "id": "renderer_js",
+      "max_candidate_bytes": 27477,
+      "candidates": [
+        {
+          "path": "canvaskit/canvaskit.js",
+          "size_bytes": 27477,
+          "raw_size_bytes": 86619,
+          "gzip_size_bytes": 27477
+        },
+        {
+          "path": "canvaskit/chromium/canvaskit.js",
+          "size_bytes": 27435,
+          "raw_size_bytes": 86256,
+          "gzip_size_bytes": 27435
+        },
+        {
+          "path": "canvaskit/skwasm.js",
+          "size_bytes": 16397,
+          "raw_size_bytes": 60657,
+          "gzip_size_bytes": 16397
+        },
+        {
+          "path": "canvaskit/skwasm_heavy.js",
+          "size_bytes": 16412,
+          "raw_size_bytes": 60770,
+          "gzip_size_bytes": 16412
+        }
+      ]
+    },
+    {
+      "id": "renderer_wasm",
+      "max_candidate_bytes": 2850741,
+      "candidates": [
+        {
+          "path": "canvaskit/canvaskit.wasm",
+          "size_bytes": 2850741,
+          "raw_size_bytes": 7083768,
+          "gzip_size_bytes": 2850741
+        },
+        {
+          "path": "canvaskit/chromium/canvaskit.wasm",
+          "size_bytes": 2160241,
+          "raw_size_bytes": 5708955,
+          "gzip_size_bytes": 2160241
+        },
+        {
+          "path": "canvaskit/skwasm.wasm",
+          "size_bytes": 1512864,
+          "raw_size_bytes": 3551820,
+          "gzip_size_bytes": 1512864
+        },
+        {
+          "path": "canvaskit/skwasm_heavy.wasm",
+          "size_bytes": 2239094,
+          "raw_size_bytes": 5047312,
+          "gzip_size_bytes": 2239094
+        }
+      ]
+    }
+  ],
+  "external_resources": [],
+  "external_match_groups": []
+}
