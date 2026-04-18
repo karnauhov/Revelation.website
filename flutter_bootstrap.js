@@ -153,7 +153,7 @@ _flutter.buildConfig = {"engineRevision":"78fc3012e45889657f72359b005af7beac47ba
   let loaderDismissed = false;
   let observer;
   const serviceWorkerVersion =
-    parseServiceWorkerVersion(`"3097730622"`) ??
+    parseServiceWorkerVersion(`"3358168214"`) ??
     'revelation-files-cache-v1';
   requestProgressFrame();
 

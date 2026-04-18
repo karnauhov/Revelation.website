@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-04-04T07:00:00Z",
-  "estimated_startup_total_bytes": 4839881,
+  "generated_at_utc": "2026-04-18T04:53:47Z",
+  "estimated_startup_total_bytes": 4873801,
   "navigation_document": {
     "path": "index.html",
-    "size_bytes": 1807,
-    "raw_size_bytes": 6029,
-    "gzip_size_bytes": 1807
+    "size_bytes": 1866,
+    "raw_size_bytes": 6179,
+    "gzip_size_bytes": 1866
   },
   "required_resources": [
     {
@@ -28,9 +28,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 7067,
-      "raw_size_bytes": 13212,
-      "gzip_size_bytes": 7067
+      "size_bytes": 7368,
+      "raw_size_bytes": 13748,
+      "gzip_size_bytes": 7368
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -39,15 +39,21 @@
       "gzip_size_bytes": 1011
     },
     {
+      "path": "assets/packages/flutter_inappwebview_web/assets/web/web_support.js",
+      "size_bytes": 3435,
+      "raw_size_bytes": 28409,
+      "gzip_size_bytes": 3435
+    },
+    {
       "path": "favicon.png",
       "size_bytes": 2382,
       "raw_size_bytes": 2382
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12272,
+      "size_bytes": 12273,
       "raw_size_bytes": 52031,
-      "gzip_size_bytes": 12272
+      "gzip_size_bytes": 12273
     },
     {
       "path": "icons/Icon-192.png",
@@ -56,15 +62,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 909,
-      "raw_size_bytes": 4672,
-      "gzip_size_bytes": 909
+      "size_bytes": 963,
+      "raw_size_bytes": 4862,
+      "gzip_size_bytes": 963
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1413898,
-      "raw_size_bytes": 5076952,
-      "gzip_size_bytes": 1413898
+      "size_bytes": 1443257,
+      "raw_size_bytes": 5186043,
+      "gzip_size_bytes": 1443257
     },
     {
       "path": "manifest.json",
@@ -108,18 +114,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 5565,
+      "max_candidate_bytes": 6276,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 5565,
-          "raw_size_bytes": 5565
+          "size_bytes": 6276,
+          "raw_size_bytes": 6276
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 1670,
-          "raw_size_bytes": 7422,
-          "gzip_size_bytes": 1670
+          "size_bytes": 1972,
+          "raw_size_bytes": 8370,
+          "gzip_size_bytes": 1972
         }
       ]
     },
