@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-04-18T04:53:47Z",
-  "estimated_startup_total_bytes": 4873801,
+  "generated_at_utc": "2026-05-01T08:40:00Z",
+  "estimated_startup_total_bytes": 5123367,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -11,9 +11,9 @@
   "required_resources": [
     {
       "path": "assets/FontManifest.json",
-      "size_bytes": 161,
-      "raw_size_bytes": 291,
-      "gzip_size_bytes": 161
+      "size_bytes": 184,
+      "raw_size_bytes": 409,
+      "gzip_size_bytes": 184
     },
     {
       "path": "assets/assets/fonts/Arimo/Arimo.ttf",
@@ -22,15 +22,21 @@
       "gzip_size_bytes": 305453
     },
     {
+      "path": "assets/assets/fonts/NotoSansCoptic/NotoSansCoptic-Regular.ttf",
+      "size_bytes": 48587,
+      "raw_size_bytes": 92512,
+      "gzip_size_bytes": 48587
+    },
+    {
       "path": "assets/assets/images/UI/startup_splash_banner.jpg",
       "size_bytes": 134007,
       "raw_size_bytes": 134007
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 7368,
-      "raw_size_bytes": 13748,
-      "gzip_size_bytes": 7368
+      "size_bytes": 7460,
+      "raw_size_bytes": 13972,
+      "gzip_size_bytes": 7460
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -51,9 +57,9 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12273,
+      "size_bytes": 12272,
       "raw_size_bytes": 52031,
-      "gzip_size_bytes": 12273
+      "gzip_size_bytes": 12272
     },
     {
       "path": "icons/Icon-192.png",
@@ -62,15 +68,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 963,
-      "raw_size_bytes": 4862,
-      "gzip_size_bytes": 963
+      "size_bytes": 989,
+      "raw_size_bytes": 5049,
+      "gzip_size_bytes": 989
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1443257,
-      "raw_size_bytes": 5186043,
-      "gzip_size_bytes": 1443257
+      "size_bytes": 1643749,
+      "raw_size_bytes": 5863083,
+      "gzip_size_bytes": 1643749
     },
     {
       "path": "manifest.json",
@@ -114,18 +120,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 6276,
+      "max_candidate_bytes": 6623,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 6276,
-          "raw_size_bytes": 6276
+          "size_bytes": 6623,
+          "raw_size_bytes": 6623
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 1972,
-          "raw_size_bytes": 8370,
-          "gzip_size_bytes": 1972
+          "size_bytes": 2112,
+          "raw_size_bytes": 8834,
+          "gzip_size_bytes": 2112
         }
       ]
     },
