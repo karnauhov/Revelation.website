@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-01T08:40:00Z",
-  "estimated_startup_total_bytes": 5123367,
+  "generated_at_utc": "2026-05-02T13:57:38Z",
+  "estimated_startup_total_bytes": 5657527,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -11,9 +11,9 @@
   "required_resources": [
     {
       "path": "assets/FontManifest.json",
-      "size_bytes": 184,
-      "raw_size_bytes": 409,
-      "gzip_size_bytes": 184
+      "size_bytes": 208,
+      "raw_size_bytes": 633,
+      "gzip_size_bytes": 208
     },
     {
       "path": "assets/assets/fonts/Arimo/Arimo.ttf",
@@ -22,10 +22,22 @@
       "gzip_size_bytes": 305453
     },
     {
+      "path": "assets/assets/fonts/NotoSans/NotoSans-Regular.ttf",
+      "size_bytes": 221201,
+      "raw_size_bytes": 427212,
+      "gzip_size_bytes": 221201
+    },
+    {
       "path": "assets/assets/fonts/NotoSansCoptic/NotoSansCoptic-Regular.ttf",
       "size_bytes": 48587,
       "raw_size_bytes": 92512,
       "gzip_size_bytes": 48587
+    },
+    {
+      "path": "assets/assets/fonts/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf",
+      "size_bytes": 303815,
+      "raw_size_bytes": 672120,
+      "gzip_size_bytes": 303815
     },
     {
       "path": "assets/assets/images/UI/startup_splash_banner.jpg",
@@ -57,9 +69,9 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12272,
+      "size_bytes": 12273,
       "raw_size_bytes": 52031,
-      "gzip_size_bytes": 12272
+      "gzip_size_bytes": 12273
     },
     {
       "path": "icons/Icon-192.png",
@@ -68,15 +80,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 989,
-      "raw_size_bytes": 5049,
-      "gzip_size_bytes": 989
+      "size_bytes": 1036,
+      "raw_size_bytes": 5421,
+      "gzip_size_bytes": 1036
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1643749,
-      "raw_size_bytes": 5863083,
-      "gzip_size_bytes": 1643749
+      "size_bytes": 1652592,
+      "raw_size_bytes": 5901063,
+      "gzip_size_bytes": 1652592
     },
     {
       "path": "manifest.json",
@@ -86,9 +98,9 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 88,
+      "size_bytes": 87,
       "raw_size_bytes": 92,
-      "gzip_size_bytes": 88
+      "gzip_size_bytes": 87
     }
   ],
   "optional_groups": [
@@ -120,18 +132,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 6623,
+      "max_candidate_bytes": 6853,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 6623,
-          "raw_size_bytes": 6623
+          "size_bytes": 6853,
+          "raw_size_bytes": 6853
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 2112,
-          "raw_size_bytes": 8834,
-          "gzip_size_bytes": 2112
+          "size_bytes": 2178,
+          "raw_size_bytes": 9142,
+          "gzip_size_bytes": 2178
         }
       ]
     },
