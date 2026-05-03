@@ -83,11 +83,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "assets/assets/images/UI/thank-you.svg": "a18f94f6506e3fc571e28f33d80e3ff6",
 "assets/assets/images/UI/windows.svg": "45d16d4bfed34586ed1038bad276cde5",
 "assets/assets/images/UI/www.svg": "22571dcb88bb32e1ad3c2a4f8c6ce6ad",
-"assets/assets/meta/app_build_timestamp.txt": "2a91d93f2dfdd11f7b362ec09be0af17",
+"assets/assets/meta/app_build_timestamp.txt": "848f794bf667072d69ff839481e3092a",
 "assets/assets/sounds/click.mp3": "33878b484ebbbfc10f0d6ad9fea23a9a",
 "assets/assets/sounds/page.mp3": "b5e4e05201d812f8bdbfdc980cb21c33",
 "assets/assets/sounds/stone.mp3": "ac9f29a0a4e03c71edaa3d95799fc17d",
-"assets/CHANGELOG.md": "370804cc3f2b2955cfd54ff5dfdc84bb",
+"assets/CHANGELOG.md": "c126837e58fea9810af2d625e7b75c82",
 "assets/FontManifest.json": "409ec21253c0c98af219cdc821a11579",
 "assets/fonts/MaterialIcons-Regular.otf": "9a722ab1fd0507aca59691e26baaabd2",
 "assets/NOTICES": "8edd57de8c64b2803f530505a1f5abb7",
@@ -109,16 +109,17 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "canvaskit/skwasm_heavy.js": "740d43a6b8240ef9e23eed8c48840da4",
 "canvaskit/skwasm_heavy.js.symbols": "0755b4fb399918388d71b59ad390b055",
 "canvaskit/skwasm_heavy.wasm": "b0be7910760d205ea4e011458df6ee01",
-"db/manifest.json": "6393500a1fa4cdcac386e46dddee8e41",
+"db/manifest.json": "a5b521d97aade2b868b44f12dbadf7e1",
 "db/revelation.sqlite": "0ef09a5e5ed525c090114165dd41e88d",
-"db/revelation_en.sqlite": "4794a835d4b1c724e7dcf6fa98a89f15",
-"db/revelation_es.sqlite": "c189cc8ed1d08e17b0a87c12ddc0259e",
-"db/revelation_ru.sqlite": "4bac59118c698b98b66f8c64d842026b",
-"db/revelation_uk.sqlite": "36b0b7b9a6950a3bf041800f9537d28d",
-"drift_worker.js": "3df0e5f9fc7a12f26affe74f2b07d328",
+"db/revelation_en.sqlite": "51286ae008a194d1dbc16a1613212398",
+"db/revelation_es.sqlite": "c873e94c4aceea23e1923b4d8a43d70e",
+"db/revelation_ru.sqlite": "3aac9802f64a37155e12eecedbcbba14",
+"db/revelation_uk.sqlite": "cd920726125781accc9f9f3a8e5e44b9",
+"drift_worker.js": "3e17f60732aed4149190be9f5dc3048d",
+"drift_worker.js.map": "7691840441eb3a27b7e1eb37a015e2e7",
 "favicon.png": "d20780d4c22b121b7b959f89dc64217d",
 "flutter.js": "24bc71911b75b5f8135c949e27a2984e",
-"flutter_bootstrap.js": "ad9a7ee36c4831a17461b8080bbb8b88",
+"flutter_bootstrap.js": "8a4e31be23a195afad88f4604ddafe5f",
 "icons/Icon-192.png": "7da9c929b6ed18e565a8eb554f8aa49b",
 "icons/Icon-512.png": "cd5a30a927d3d427d6a290c4122e7a89",
 "icons/Icon-maskable-192.png": "7da9c929b6ed18e565a8eb554f8aa49b",
@@ -126,11 +127,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "images/preface02.jpg": "c3771420785b9f521681d2937b1f1866",
 "index.html": "e29a5d8d30731d2c2afec99235382e2e",
 "/": "e29a5d8d30731d2c2afec99235382e2e",
-"main.dart.js": "ef2e4964ae6d29fcfe8725c7b7bbb55b",
+"main.dart.js": "65844917c2b7f4b850e3a6beee0067cf",
 "manifest.json": "1b37e6e156b78527076262d06dcf81ca",
 "revelation_files_cache_sw.js": "8fcec229af789f60a455e9b33c6adfa5",
 "sqlite3.wasm": "b9e5b5ebefa4e5ce6397a4eb8b2faa19",
-"version.json": "a5992d9e7f816497a475e98e0cb9186a"};
+"version.json": "9281e7e8b0267aff58caf6579a720878"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
@@ -301,5 +302,5 @@ function onlineFirst(event) {
     })
   );
 }
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="27dbaa3b-c383-51e9-9a51-6b2b3d4a7366")}catch(e){}}();
-//# debugId=27dbaa3b-c383-51e9-9a51-6b2b3d4a7366
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a783ac72-4782-5bf4-8a85-b4a9c06fc582")}catch(e){}}();
+//# debugId=a783ac72-4782-5bf4-8a85-b4a9c06fc582
