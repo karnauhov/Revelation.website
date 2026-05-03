@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-03T12:45:46Z",
-  "estimated_startup_total_bytes": 5716035,
+  "generated_at_utc": "2026-05-03T14:32:36Z",
+  "estimated_startup_total_bytes": 5716322,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -69,9 +69,9 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12362,
+      "size_bytes": 12364,
       "raw_size_bytes": 50962,
-      "gzip_size_bytes": 12362
+      "gzip_size_bytes": 12364
     },
     {
       "path": "icons/Icon-192.png",
@@ -80,15 +80,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1038,
+      "size_bytes": 1037,
       "raw_size_bytes": 5421,
-      "gzip_size_bytes": 1038
+      "gzip_size_bytes": 1037
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1710575,
-      "raw_size_bytes": 6097419,
-      "gzip_size_bytes": 1710575
+      "size_bytes": 1710861,
+      "raw_size_bytes": 6097996,
+      "gzip_size_bytes": 1710861
     },
     {
       "path": "manifest.json",
