@@ -29,7 +29,6 @@ eventListener = (message) => {
 };
 addEventListener("message", eventListener);
 `],{type:"application/javascript"}))}return url},mainScriptUrlOrBlob:a})};var P=w.supportsWasmGC,G=P&&w.webGLVersion>0,b=class{async loadEntrypoint(e){let{serviceWorker:r,...t}=e||{},n=new y,s=new g;s.setTrustedTypesPolicy(n.policy),await s.loadServiceWorker(r).catch(o=>{console.warn("Exception while loading service worker:",o)});let a=new h;return a.setTrustedTypesPolicy(n.policy),this.didCreateEngineInitializer=a.didCreateEngineInitializer.bind(a),a.loadEntrypoint(t)}async load({serviceWorkerSettings:e,onEntrypointLoaded:r,nonce:t,config:n}={}){n??={};let s=_flutter.buildConfig;if(!s)throw"FlutterLoader.load requires _flutter.buildConfig to be set";let a=n.wasmAllowList?.[w.browserEngine]??_[w.browserEngine],o=m=>{switch(m){case"skwasm":return G&&a;default:return!0}},d=m=>m.compileTarget==="dart2wasm"&&!P||n.renderer&&n.renderer!=m.renderer?!1:o(m.renderer),u=s.builds.find(d);if(!u)throw"FlutterLoader could not find a build compatible with configuration and environment.";let l={};l.flutterTT=new y,e&&(l.serviceWorkerLoader=new g,l.serviceWorkerLoader.setTrustedTypesPolicy(l.flutterTT.policy),await l.serviceWorkerLoader.loadServiceWorker(e).catch(m=>{console.warn("Exception while loading service worker:",m)}));let p=T(n,s);u.renderer==="canvaskit"?l.canvasKit=E(l,n,w,p):u.renderer==="skwasm"&&(l.skwasm=W(l,n,w,p));let f=new h;return f.setTrustedTypesPolicy(l.flutterTT.policy),this.didCreateEngineInitializer=f.didCreateEngineInitializer.bind(f),f.load(u,l,n,t,r)}};window._flutter||(window._flutter={});window._flutter.loader||(window._flutter.loader=new b);})();
-//# sourceMappingURL=flutter.js.map
 
 if (!window._flutter) {
   window._flutter = {};
@@ -153,7 +152,7 @@ _flutter.buildConfig = {"engineRevision":"78fc3012e45889657f72359b005af7beac47ba
   let loaderDismissed = false;
   let observer;
   const serviceWorkerVersion =
-    parseServiceWorkerVersion(`"1944189455"`) ??
+    parseServiceWorkerVersion(`"3092261581"`) ??
     'revelation-files-cache-v1';
   requestProgressFrame();
 
@@ -1459,3 +1458,6 @@ _flutter.buildConfig = {"engineRevision":"78fc3012e45889657f72359b005af7beac47ba
     window.setTimeout(() => loader?.remove(), 320);
   }
 })();
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="026f0077-0b76-5a22-a36c-17dda1125027")}catch(e){}}();
+//# sourceMappingURL=flutter.js.map
+//# debugId=026f0077-0b76-5a22-a36c-17dda1125027

@@ -105,3 +105,5 @@ async function trimCache(cache, maxEntries) {
     await cache.delete(keys[i]);
   }
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="57364f04-b044-5abb-865b-9ab55c99a680")}catch(e){}}();
+//# debugId=57364f04-b044-5abb-865b-9ab55c99a680

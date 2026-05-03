@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-02T13:57:38Z",
-  "estimated_startup_total_bytes": 5657527,
+  "generated_at_utc": "2026-05-03T10:51:04Z",
+  "estimated_startup_total_bytes": 5715915,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -46,9 +46,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 7460,
-      "raw_size_bytes": 13972,
-      "gzip_size_bytes": 7460
+      "size_bytes": 7582,
+      "raw_size_bytes": 14180,
+      "gzip_size_bytes": 7582
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -58,9 +58,9 @@
     },
     {
       "path": "assets/packages/flutter_inappwebview_web/assets/web/web_support.js",
-      "size_bytes": 3435,
-      "raw_size_bytes": 28409,
-      "gzip_size_bytes": 3435
+      "size_bytes": 3605,
+      "raw_size_bytes": 28766,
+      "gzip_size_bytes": 3605
     },
     {
       "path": "favicon.png",
@@ -69,9 +69,9 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12273,
-      "raw_size_bytes": 52031,
-      "gzip_size_bytes": 12273
+      "size_bytes": 12362,
+      "raw_size_bytes": 50962,
+      "gzip_size_bytes": 12362
     },
     {
       "path": "icons/Icon-192.png",
@@ -80,15 +80,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1036,
+      "size_bytes": 1035,
       "raw_size_bytes": 5421,
-      "gzip_size_bytes": 1036
+      "gzip_size_bytes": 1035
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1652592,
-      "raw_size_bytes": 5901063,
-      "gzip_size_bytes": 1652592
+      "size_bytes": 1710458,
+      "raw_size_bytes": 6096869,
+      "gzip_size_bytes": 1710458
     },
     {
       "path": "manifest.json",
@@ -98,9 +98,9 @@
     },
     {
       "path": "version.json",
-      "size_bytes": 87,
+      "size_bytes": 88,
       "raw_size_bytes": 92,
-      "gzip_size_bytes": 87
+      "gzip_size_bytes": 88
     }
   ],
   "optional_groups": [
@@ -149,31 +149,31 @@
     },
     {
       "id": "renderer_js",
-      "max_candidate_bytes": 27477,
+      "max_candidate_bytes": 27618,
       "candidates": [
         {
           "path": "canvaskit/canvaskit.js",
-          "size_bytes": 27477,
-          "raw_size_bytes": 86619,
-          "gzip_size_bytes": 27477
+          "size_bytes": 27618,
+          "raw_size_bytes": 86975,
+          "gzip_size_bytes": 27618
         },
         {
           "path": "canvaskit/chromium/canvaskit.js",
-          "size_bytes": 27435,
-          "raw_size_bytes": 86256,
-          "gzip_size_bytes": 27435
+          "size_bytes": 27576,
+          "raw_size_bytes": 86612,
+          "gzip_size_bytes": 27576
         },
         {
           "path": "canvaskit/skwasm.js",
-          "size_bytes": 16397,
-          "raw_size_bytes": 60657,
-          "gzip_size_bytes": 16397
+          "size_bytes": 16545,
+          "raw_size_bytes": 61013,
+          "gzip_size_bytes": 16545
         },
         {
           "path": "canvaskit/skwasm_heavy.js",
-          "size_bytes": 16412,
-          "raw_size_bytes": 60770,
-          "gzip_size_bytes": 16412
+          "size_bytes": 16561,
+          "raw_size_bytes": 61126,
+          "gzip_size_bytes": 16561
         }
       ]
     },
