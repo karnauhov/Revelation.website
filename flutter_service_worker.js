@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3",
-"assets/AssetManifest.bin.json": "7f991c7ad4b29c1f7a88a2425c11654f",
+const RESOURCES = {"assets/AssetManifest.bin": "81e9aa0ee48b51c453eec851a0570f49",
+"assets/AssetManifest.bin.json": "b2d4af4a01b58a0610bb95ce3a27b8cc",
 "assets/assets/data/about_institutions.xml": "cf6bfc32bc5b6aa94e17d2ed7c5d0776",
 "assets/assets/data/about_libraries.xml": "7dc8442f00972e54c163464108ae94e6",
 "assets/assets/data/about_recommended.xml": "b512871737ac315da761c64a01b5cb2b",
@@ -22,7 +22,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "assets/assets/images/UI/app_icon.png": "e2b0b3e21ab066fa36d3c606a74bec4a",
 "assets/assets/images/UI/app_icon_android.png": "0614a77419ad230bf2b9d6b8b21694e7",
 "assets/assets/images/UI/attention.svg": "9bcb57df0a667dd5049e27a4706ec952",
+"assets/assets/images/UI/bible.svg": "670bf172dc3475a2c8fb67a7aca4a658",
 "assets/assets/images/UI/bug.svg": "842b96428b7f1459c7940bd224b68daf",
+"assets/assets/images/UI/candle.svg": "0eca04d4e1753f392a1ac1707ba9be89",
 "assets/assets/images/UI/changelog.svg": "fd6199b11e04bce5de72cb7d7e1e751d",
 "assets/assets/images/UI/close.svg": "5a67006a07095a64ad1a0499245aaa56",
 "assets/assets/images/UI/code.svg": "edc0a23bb38ae382f6585d84c2be844a",
@@ -35,6 +37,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "assets/assets/images/UI/get_app.svg": "c551ef2b93bdfe56aa6c27a621fe7f02",
 "assets/assets/images/UI/github.svg": "a976301549799cf3f56956f7bf2ca9bf",
 "assets/assets/images/UI/google_play.svg": "6be7b74902b1fe5fc7bde2139264dd12",
+"assets/assets/images/UI/history.svg": "2a04a0b400ff416cb32e70620dc72a1d",
 "assets/assets/images/UI/info.svg": "6aef43c0ae788e23acb00f0c1529cd76",
 "assets/assets/images/UI/institution.svg": "e63d1c0b942d53636fa8cbd98b7cdc4c",
 "assets/assets/images/UI/inst_bav.png": "96c1e8ad784ffa7a1504513c8badaaec",
@@ -75,19 +78,21 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "assets/assets/images/UI/menu.svg": "37acaa26fdfba972b202c967e9ee9425",
 "assets/assets/images/UI/microsoft_store.svg": "4520d2236a127f87234e79ce25382d02",
 "assets/assets/images/UI/papyrus.svg": "a43fde7d67df6d804c2124dbf3b27254",
+"assets/assets/images/UI/search_book.svg": "0dd7969a9be9db43db464cf9883edd56",
 "assets/assets/images/UI/settings.svg": "8074a046b7af8683af31c0322044e6d9",
 "assets/assets/images/UI/shield.svg": "85d825b1de8bb1e54f5455d881c2a199",
 "assets/assets/images/UI/snapcraft.svg": "58457d9295308728b7d3dc1d1e9f4e3c",
 "assets/assets/images/UI/startup_splash_banner.jpg": "8eb37dd7a833ab20c04b3518132cf905",
+"assets/assets/images/UI/structure.svg": "99ac54dd4d8e0077feda2aaff20f43be",
 "assets/assets/images/UI/support_us.svg": "2bc3213501b8812e94746b0beabd6357",
 "assets/assets/images/UI/thank-you.svg": "a18f94f6506e3fc571e28f33d80e3ff6",
 "assets/assets/images/UI/windows.svg": "45d16d4bfed34586ed1038bad276cde5",
 "assets/assets/images/UI/www.svg": "22571dcb88bb32e1ad3c2a4f8c6ce6ad",
-"assets/assets/meta/app_build_timestamp.txt": "39a3a50d0923a450d1d24df764022f7f",
+"assets/assets/meta/app_build_timestamp.txt": "8859ba76c73655e24118352ba04f922d",
 "assets/assets/sounds/click.mp3": "33878b484ebbbfc10f0d6ad9fea23a9a",
 "assets/assets/sounds/page.mp3": "b5e4e05201d812f8bdbfdc980cb21c33",
 "assets/assets/sounds/stone.mp3": "ac9f29a0a4e03c71edaa3d95799fc17d",
-"assets/CHANGELOG.md": "c126837e58fea9810af2d625e7b75c82",
+"assets/CHANGELOG.md": "419a2ca8c0f33e23d5364a2b6b24d55c",
 "assets/FontManifest.json": "409ec21253c0c98af219cdc821a11579",
 "assets/fonts/MaterialIcons-Regular.otf": "9a722ab1fd0507aca59691e26baaabd2",
 "assets/NOTICES": "8edd57de8c64b2803f530505a1f5abb7",
@@ -119,7 +124,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "drift_worker.js.map": "7691840441eb3a27b7e1eb37a015e2e7",
 "favicon.png": "d20780d4c22b121b7b959f89dc64217d",
 "flutter.js": "24bc71911b75b5f8135c949e27a2984e",
-"flutter_bootstrap.js": "57a6d9fff1103f460324ac1529580e69",
+"flutter_bootstrap.js": "490cd74c03852bbe958ff5e8f4fead72",
 "icons/Icon-192.png": "7da9c929b6ed18e565a8eb554f8aa49b",
 "icons/Icon-512.png": "cd5a30a927d3d427d6a290c4122e7a89",
 "icons/Icon-maskable-192.png": "7da9c929b6ed18e565a8eb554f8aa49b",
@@ -127,11 +132,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "06708fd993bb14fa6994a63af0ba0cf3
 "images/preface02.jpg": "c3771420785b9f521681d2937b1f1866",
 "index.html": "e29a5d8d30731d2c2afec99235382e2e",
 "/": "e29a5d8d30731d2c2afec99235382e2e",
-"main.dart.js": "fe34bbbf02e5a8040ced91107d2e9332",
+"main.dart.js": "82a6f45b292f63c73353583f0c5e0c49",
 "manifest.json": "1b37e6e156b78527076262d06dcf81ca",
 "revelation_files_cache_sw.js": "8fcec229af789f60a455e9b33c6adfa5",
 "sqlite3.wasm": "b9e5b5ebefa4e5ce6397a4eb8b2faa19",
-"version.json": "b5f71d614f55bd59e387a27cd07af280"};
+"version.json": "18868c243e1f29c548cbdaa07267be44"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
@@ -302,5 +307,5 @@ function onlineFirst(event) {
     })
   );
 }
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="03e86303-c187-5ae6-8fcc-7ee999bc5ee1")}catch(e){}}();
-//# debugId=03e86303-c187-5ae6-8fcc-7ee999bc5ee1
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="904088ea-3358-57ab-8cc6-97a3f8830a4c")}catch(e){}}();
+//# debugId=904088ea-3358-57ab-8cc6-97a3f8830a4c

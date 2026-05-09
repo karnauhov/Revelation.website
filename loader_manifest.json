@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-03T14:32:36Z",
-  "estimated_startup_total_bytes": 5716322,
+  "generated_at_utc": "2026-05-09T11:24:46Z",
+  "estimated_startup_total_bytes": 5733053,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -80,15 +80,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1037,
+      "size_bytes": 1033,
       "raw_size_bytes": 5421,
-      "gzip_size_bytes": 1037
+      "gzip_size_bytes": 1033
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1710861,
-      "raw_size_bytes": 6097996,
-      "gzip_size_bytes": 1710861
+      "size_bytes": 1727235,
+      "raw_size_bytes": 6156504,
+      "gzip_size_bytes": 1727235
     },
     {
       "path": "manifest.json",
@@ -132,18 +132,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 6853,
+      "max_candidate_bytes": 7214,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 6853,
-          "raw_size_bytes": 6853
+          "size_bytes": 7214,
+          "raw_size_bytes": 7214
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 2178,
-          "raw_size_bytes": 9142,
-          "gzip_size_bytes": 2178
+          "size_bytes": 2275,
+          "raw_size_bytes": 9622,
+          "gzip_size_bytes": 2275
         }
       ]
     },
