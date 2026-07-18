@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-05-23T03:16:00Z",
-  "estimated_startup_total_bytes": 5734524,
+  "generated_at_utc": "2026-07-18T09:06:14Z",
+  "estimated_startup_total_bytes": 5781608,
   "navigation_document": {
     "path": "index.html",
     "size_bytes": 1866,
@@ -46,9 +46,9 @@
     },
     {
       "path": "assets/fonts/MaterialIcons-Regular.otf",
-      "size_bytes": 7699,
-      "raw_size_bytes": 14388,
-      "gzip_size_bytes": 7699
+      "size_bytes": 8434,
+      "raw_size_bytes": 15644,
+      "gzip_size_bytes": 8434
     },
     {
       "path": "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -69,9 +69,9 @@
     },
     {
       "path": "flutter_bootstrap.js",
-      "size_bytes": 12361,
-      "raw_size_bytes": 50960,
-      "gzip_size_bytes": 12361
+      "size_bytes": 12363,
+      "raw_size_bytes": 50962,
+      "gzip_size_bytes": 12363
     },
     {
       "path": "icons/Icon-192.png",
@@ -80,15 +80,15 @@
     },
     {
       "path": "loader_manifest.json",
-      "size_bytes": 1032,
+      "size_bytes": 1038,
       "raw_size_bytes": 5422,
-      "gzip_size_bytes": 1032
+      "gzip_size_bytes": 1038
     },
     {
       "path": "main.dart.js",
-      "size_bytes": 1728301,
-      "raw_size_bytes": 6164377,
-      "gzip_size_bytes": 1728301
+      "size_bytes": 1774466,
+      "raw_size_bytes": 6340065,
+      "gzip_size_bytes": 1774466
     },
     {
       "path": "manifest.json",
@@ -132,18 +132,18 @@
     },
     {
       "id": "asset_manifest",
-      "max_candidate_bytes": 7506,
+      "max_candidate_bytes": 7682,
       "candidates": [
         {
           "path": "assets/AssetManifest.bin",
-          "size_bytes": 7506,
-          "raw_size_bytes": 7506
+          "size_bytes": 7682,
+          "raw_size_bytes": 7682
         },
         {
           "path": "assets/AssetManifest.bin.json",
-          "size_bytes": 2341,
-          "raw_size_bytes": 10010,
-          "gzip_size_bytes": 2341
+          "size_bytes": 2406,
+          "raw_size_bytes": 10246,
+          "gzip_size_bytes": 2406
         }
       ]
     },
