@@ -71,6 +71,13 @@
         <licenseLink></licenseLink>
     </library>
     <library>
+        <name>@BibleModule 'OH1988' — Іван Огієнко, видання 1988 року / Українські Вікіджерела</name>
+        <idIcon>bible</idIcon>
+        <license>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0); text and printed footnotes, without Strong numbers</license>
+        <officialSite>https://commons.wikimedia.org/wiki/File:Ivan_Ohienko_Bible.djvu</officialSite>
+        <licenseLink>https://commons.wikimedia.org/wiki/File:Ivan_Ohienko_Bible.djvu#Licensing</licenseLink>
+    </library>
+    <library>
         <name>@BibleModule 'KJV' @by eBible.org / CrossWire</name>
         <idIcon>bible</idIcon>
         <license>Public Domain outside the UK; UK Crown Letters Patent restrictions apply</license>
@@ -251,6 +258,13 @@
         <license>Apache-2.0</license>
         <officialSite>https://pub.dev/packages/flutter_inappwebview</officialSite>
         <licenseLink>https://pub.dev/packages/flutter_inappwebview/license</licenseLink>
+    </library>
+    <library>
+        <name>@Package 'flutter_inappwebview_android'</name>
+        <idIcon></idIcon>
+        <license>Apache-2.0</license>
+        <officialSite>https://github.com/pichillilorenzo/flutter_inappwebview/tree/v6.1.5/flutter_inappwebview_android</officialSite>
+        <licenseLink>https://github.com/pichillilorenzo/flutter_inappwebview/blob/v6.1.5/flutter_inappwebview_android/LICENSE</licenseLink>
     </library>
     <library>
         <name>@Package 'vector_math'</name>

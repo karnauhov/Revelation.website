@@ -2,6 +2,27 @@
 
 All notable changes to this application will be documented here.
 
+## [1.0.8](https://github.com/karnauhov/Revelation/releases/tag/v1.0.8%2B178) - 14.11.26
+
+### Added
+
+- Open Bible references with an available translation beside the original, and remember your preferred reading panes.
+- Added the Ukrainian Ohienko Bible (1988 edition) with separate verse footnotes; Strong's numbers are not included in this module. Strong's controls are hidden for modules without Strong's numbers.
+- Show Bible module versions and update dates with clearer information and expandable source details.
+- Open the privacy policy and license directly from shareable links, including standalone English web pages.
+
+### Fixed
+
+- Enabled consistent edge-to-edge display on Android while keeping controls clear of system bars.
+- Prevented web database startup errors when several modules open at the same time.
+- Fixed verse previews on the first long press in Strong's Dictionary.
+- Keep Greek keyboard accessibility controls valid while opening and closing the dictionary.
+- Prevent accessibility focus errors when the web app finishes starting.
+- Fixed local Bible modules missing updates when the new file has the same size; invalid downloads preserve the installed copy.
+- Keep database checks and Bible module updates running when the local manifest cache cannot be saved.
+- Show the local folder path when the app cannot open it.
+- Retry a failed first Bible module download directly from the reader after the connection recovers.
+
 ## [1.0.7](https://github.com/karnauhov/Revelation/releases/tag/v1.0.7%2B172) - 18.07.26
 
 ### Added
