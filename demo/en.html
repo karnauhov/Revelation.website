@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation of Revelation - an application for studying the Book of Revelation</title>
     <link rel="icon" type="image/png" href="../favicon.png"/>
+    <link rel="stylesheet" href="roadmap.css">
+    <script src="roadmap-milestones.js" defer></script>
+    <script src="roadmap.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -151,20 +154,6 @@
             opacity: 0.9;
         }
 
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-
-        .timeline-item {
-            background: rgba(255,255,255,0.1);
-            margin: 1rem 0;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid #ffd700;
-        }
-
         .cta-button {
             background: linear-gradient(45deg, #ff6b6b, #ee5a24);
             color: white;
@@ -299,10 +288,9 @@
             <img src="../images/preface02.jpg" width="50%">
             <p></p>
             <div class="feature-card">
-                <h3>👨‍🏫 Author Team</h3>
-                <p>To implement this methodology, it is planned to involve a large number of scholars, linguists, theologians, historians, pastors, and other ministers. Each of them could prepare "brief" and "in-depth" commentary texts corresponding to their qualifications for one of the passages of Revelation.</p>
-                <p>The "brief" text could be written in a simple style and small in volume for a wider audience. The "in-depth" text can be much larger in volume and contain more specialized terminology for those who wish to deepen their understanding.</p>
-                <p>Developers and designers would be able to provide the texts with various audio and visual materials to facilitate reading and assimilation.</p>
+                <h3>📚 How a study is prepared</h3>
+                <p>Each passage has a short explanation and a deeper study. AI agents help compare sources, draft copy and check links. Each published passage goes through all seven stages and a review of the evidence.</p>
+                <p>Sources and supporting materials accompany each study. Feedback from readers and targeted review by specialists help where their expertise is most useful.</p>
             </div>
         </div>
 
@@ -312,17 +300,17 @@
             <div class="feature-card">
                 <a href="https://flutter.dev/" target="_blank"><img src="../assets/assets/images/UI/lib_flutter.svg" width="64"></a>
                 <h3><a href="https://flutter.dev/" target="_blank">Flutter Framework</a></h3>
-                <p>The Revelation application is built on the modern Flutter framework from Google. This means that we write the code once and run it everywhere – on phones, tablets, PCs, and in browsers. Thus, one development team maintains the entire range of devices, rather than six separate teams working on their own applications. On all platforms, the application looks the same: on the web, Android, iOS, Windows, Mac, or even Linux – with a unified design and excellent performance.</p>
+                <p>Flutter lets us share the core of the app across devices. Revelation is available on Web, Android, Windows and Linux. iOS and macOS are planned, subject to successful builds and store acceptance.</p>
             </div>
             <div class="platform-icons">
                 <div class="platform-icon" title="Web"><a href="https://www.revelation.website" target="_blank"><img src="web.svg" width="48"></a></div>
                 <div class="platform-icon" title="Android"><a href="https://play.google.com/store/apps/details?id=ai11.link.revelation" target="_blank"><img src="android.svg" width="48"></a></div>
                 <div class="platform-icon" title="Windows"><a href="https://apps.microsoft.com/detail/9nxhrr2p4087" target="_blank"><img src="windows.svg" width="48"></a></div>
                 <div class="platform-icon" title="Linux"><a href="https://snapcraft.io/revelation-x" target="_blank"><img src="linux.svg" width="48"></a></div>
-                <div class="platform-icon" title="iOS (coming soon)"><img src="ios.svg" width="48"></div>
-                <div class="platform-icon" title="macOS (coming soon)"><img src="macos.svg" width="48"></div>
+                <div class="platform-icon" title="iOS (planned)"><img src="ios.svg" width="48"></div>
+                <div class="platform-icon" title="macOS (planned)"><img src="macos.svg" width="48"></div>
             </div>
-            <p><strong>6 platforms</strong> simultaneously with minimal development costs</p>
+            <p><strong>4 public platforms</strong> · 2 Apple platforms planned</p>
         </div>
 
         <!-- Slide 5: Audience Reach -->
@@ -337,98 +325,48 @@
         <div class="slide" id="localization">
             <h2>Multilingual Support</h2>
             <div class="feature-card">
-                <h3>🌍 Global Localization</h3>
-                <p>Using AI for initial translation</p>
-                <p>Verification and correction by native speakers</p>
-                <p>Maximum number of languages for global coverage</p>
+                <h3>🌍 Languages, one step at a time</h3>
+                <p>The interface is available in English, Spanish, Ukrainian and Russian.</p>
+                <p>We aim to offer at least one verified Bible translation for each interface language.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🤖 AI Translation</h3>
-                    <p>Quick creation of fairly high-quality basic translations using advanced large language AI models</p>
+                    <h3>🤖 Drafting and checks</h3>
+                    <p>AI agents help draft translations and check terminology, links and consistency.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>👥 Community</h3>
-                    <p>Forming a community of native speakers of various languages to check and improve translations of the interface and comments</p>
+                    <h3>💬 Reader feedback</h3>
+                    <p>Readers and native speakers can flag unclear wording or suggest improvements where their feedback is most useful.</p>
                 </div>
             </div>
         </div>
 
         <!-- Slide 7: Roadmap -->
-        <div class="slide" id="roadmap">
-            <h2>Development Plan</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Phase 1: Preparatory (current)</h3>
-                    <p>👍 Basic functionality for displaying original sources and supporting textual and graphical content of comments<br>
-                    📜 Preface<br>
-                    🌍 English, Spanish, Russian, Ukrainian<br>
-                    💻 Web, Android, Windows, Linux, iOS, macOS<br>
-                    📢 Searching for sponsors, developers, designers, and testers<br></p>
+        <div class="slide" id="roadmap" aria-labelledby="roadmap-title">
+            <h2 id="roadmap-title">Revelation roadmap</h2>
+            <div class="roadmap-chart">
+                <a class="roadmap-art" href="https://github.com/karnauhov/Revelation/blob/main/ROADMAP.md">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="roadmap-mobile.svg" width="480" height="733">
+                        <img src="roadmap.svg" width="1200" height="635" loading="lazy" alt="Eight parallel tracks in the Revelation project, from its first releases to the plans ahead. Open the detailed roadmap on GitHub (in Russian).">
+                    </picture>
+                </a>
+                <div class="roadmap-nodes"></div>
+                <div class="roadmap-tooltip" id="roadmap-tooltip" role="tooltip" hidden></div>
+            </div>
+            <p class="roadmap-note">Hover over a code or focus it with your keyboard to see a short description. Select it to open the full entry.</p>
+            <div class="roadmap-summary">
+                <div>
+                    <h3>What’s already available</h3>
+                    <p>From the first Android release in 2025 to 1.0.8: manuscript facsimiles, Strong’s dictionary and parallel Bible reading. The app is available on Web, Android, Windows and Linux. KJV, LXX/TR and the Ukrainian Ohienko Bible with footnotes are ready to read.</p>
                 </div>
-                <div class="timeline-item">
-                    <h3>Phase 2: Prologue</h3>
-                    <p>👍 Advanced functionality for working with original sources (stage 1)<br>
-                    📜 Revelation 1:1–8<br>
-                    🌍 Major European languages<br>
-                    📢 Searching for sponsors, scholars, theologians, ministers, and native speakers<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 3: Seven Churches</h3>
-                    <p>👍 Advanced functionality for dictionary and sentence structure (stage 2)<br>
-                    📜 Revelation 1:9–3:22<br>
-                    🌍 Major Asian languages<br>
-                    📢 Searching for native speakers<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 4: Seven Seals</h3>
-                    <p>👍 Advanced functionality for searching and analyzing allusions and references (stage 3)<br>
-                    📜 Revelation 4:1–8:1<br>
-                    🌍 Major African languages<br>
-                    📢 Searching for native speakers. Advertising in North America<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 5: Seven Trumpets</h3>
-                    <p>👍 Advanced functionality to help understand how each section points to the person and ministry of Christ (stage 4)<br>
-                    📜 Revelation 8:2–11:18<br>
-                    🌍 Non-European languages of South and North America<br>
-                    📢 Searching for native speakers. Advertising in Europe<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 6: The Final Crisis</h3>
-                    <p>👍 Advanced functionality for studying and correlating passages with identified structures, analyzing connections with other books of the New Testament, the Book of Daniel, the Old Testament, and the Bible as a whole (stage 5)<br>
-                    📜 Revelation 11:19–15:4<br>
-                    🌍 Non-European languages of Australia and Oceania<br>
-                    📢 Searching for native speakers. Advertising in Asia<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 7: Seven Bowls</h3>
-                    <p>👍 Advanced functionality for working with historical facts, timelines, etc. (stage 6)<br>
-                    📜 Revelation 15:5–18:24<br>
-                    🌍 Additional European languages<br>
-                    📢 Searching for native speakers. Advertising in Africa<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 8: Millennial Kingdom</h3>
-                    <p>👍 Advanced functionality for extracting spiritual lessons for personal life, keeping spiritual diaries, etc. (stage 7)<br>
-                    📜 Revelation 19:1–20:15<br>
-                    🌍 Additional Asian languages<br>
-                    📢 Searching for native speakers. Advertising in South America<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 9: New Jerusalem</h3>
-                    <p>👍 Advanced functionality for supporting multimedia content in comments on each passage<br>
-                    📜 Revelation 21:1–22:5<br>
-                    🌍 Additional African languages<br>
-                    📢 Searching for native speakers. Advertising in Australia and Oceania<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Phase 10: Epilogue</h3>
-                    <p>📜 Revelation 22:6–21<br>
-                    🌍 Other languages of small nations<br>
-                    📢 Searching for native speakers. Global and local advertising campaigns<br></p>
+                <div>
+                    <h3>What comes next</h3>
+                    <p>Allusion search, Russian and Spanish Bible modules, and offline study. We plan to publish each passage after all seven stages are complete, beginning with Revelation 1:1-3 and then the full prologue. Manuscript acquisition and annotation, new languages, outreach and platform work continue in parallel.</p>
                 </div>
             </div>
+            <p class="roadmap-note">The roadmap shows indicative dates and the conditions that affect them.</p>
+            <a class="roadmap-details" href="https://github.com/karnauhov/Revelation/blob/main/ROADMAP.md">Open the detailed roadmap on GitHub (in Russian)</a>
         </div>
 
         <!-- Slide 8: Missionary Aspect -->
@@ -450,26 +388,22 @@
                         <p>Introducing Christians of all denominations, representatives of other religions, and even non-believers to the message of Revelation</p>
                     </div>
                 </div>
-                
-                <p>It is planned to use in future evangelical and advertising campaigns around the world for maximum dissemination of God's message.</p>
+
+                <p>Over time we hope to share completed studies in more languages and regions, guided by reader interest and what we can support.</p>
             </div>
         </div>
 
         <!-- Slide 9: Call to Action -->
         <div class="slide" id="join">
-            <h2>Join the Project</h2>
-            <p>The Revelation application will combine advanced technology and deep theological work to make the Book of Revelation accessible to all. We invite you to support the project and join its mission to spread a clear understanding of the Book of Revelation.</p>
+            <h2>Read, share, or send feedback</h2>
+            <p>Try the app and tell us where reading or study could be easier. If a passage helps you, share it with someone who might want to read it too.</p>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🤝 How You Can Help</h3>
-                    <p>• 🙏 Pray for us<br>
-                    • 📢 Share <a href="https://www.revelation.website/demo/en.html" target="_blank">this link</a><br>
-                    • 💳 Become a sponsor via <a href="https://waygiver.com/campaigns/3333" target="_blank">WayGiver</a><br>
-                    • 👨‍💻 Participate in development on <a href="https://github.com/karnauhov/Revelation" target="_blank">GitHub</a><br>
-                    • 📐 Test the application<br>
-                    • 📝 Create content<br>
-                    • 🌍 Participate in translations<br></p>
+                    <h3>🤝 Ways to support the project</h3>
+                    <p>• 🙏 Pray for the project<br>
+                    • 📢 Share <a href="https://www.revelation.website/demo/en.html" target="_blank">this presentation</a><br>
+                    • 💬 Report a problem or suggest an improvement on <a href="https://github.com/karnauhov/Revelation/issues" target="_blank">GitHub</a></p>
                 </div>
             </div>
             

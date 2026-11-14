@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentación de Revelation - aplicación para el estudio del Apocalipsis</title>
     <link rel="icon" type="image/png" href="../favicon.png"/>
+    <link rel="stylesheet" href="roadmap.css">
+    <script src="roadmap-milestones.js" defer></script>
+    <script src="roadmap.js" defer></script>
     <style>
         * {
             margin: 0;
@@ -151,20 +154,6 @@
             opacity: 0.9;
         }
 
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
-        }
-
-        .timeline-item {
-            background: rgba(255,255,255,0.1);
-            margin: 1rem 0;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid #ffd700;
-        }
-
         .cta-button {
             background: linear-gradient(45deg, #ff6b6b, #ee5a24);
             color: white;
@@ -299,10 +288,9 @@
             <img src="../images/preface02.jpg" width="50%">
             <p></p>
             <div class="feature-card">
-                <h3>👨‍🏫 Equipo de autores</h3>
-                <p>Para implementar esta metodología, se planea involucrar a un gran número de lingüistas, teólogos, historiadores, pastores y otros ministros. Cada uno de ellos podría preparar textos de comentarios "breves" y "profundos" correspondientes a su etapa de calificación de uno de los pasajes del Apocalipsis.</p>
-                <p>El texto "breve" podría estar escrito en un estilo simple y de pequeño volumen para un público más amplio. El texto "profundo" ya puede ser mucho más extenso y contener terminología más específica para aquellos que deseen profundizar su comprensión.</p>
-                <p>Los desarrolladores y diseñadores podrían proporcionar los textos con diversos materiales de audio y visuales para facilitar la lectura y la asimilación.</p>
+                <h3>📚 Cómo preparamos cada estudio</h3>
+                <p>Cada pasaje tiene una explicación breve y un estudio más detallado. Los agentes de IA ayudan a comparar fuentes, redactar borradores y comprobar enlaces. Antes de publicar, completamos las siete etapas y revisamos la evidencia.</p>
+                <p>Cada estudio incluye sus fuentes y materiales de apoyo. Las aportaciones de los lectores y la revisión de especialistas ayudan cuando su experiencia resulta útil.</p>
             </div>
         </div>
 
@@ -312,17 +300,17 @@
             <div class="feature-card">
                 <a href="https://flutter.dev/" target="_blank"><img src="../assets/assets/images/UI/lib_flutter.svg" width="64"></a>
                 <h3><a href="https://flutter.dev/" target="_blank">Flutter Framework</a></h3>
-                <p>La aplicación Revelation está construida sobre el moderno framework Flutter de Google. Esto significa que escribimos el código una vez y lo ejecutamos en todas partes: en teléfonos, tabletas, PC y en navegadores. De esta manera, un equipo de desarrolladores mantiene todo el espectro de dispositivos, en lugar de seis equipos separados trabajando en sus propias aplicaciones. En todas las plataformas, la aplicación se ve igual: en web, Android, iOS, Windows, Mac o incluso Linux: un diseño unificado y un excelente rendimiento.</p>
+                <p>Flutter nos permite compartir el núcleo de la aplicación entre dispositivos. Revelation está disponible en web, Android, Windows y Linux. iOS y macOS están previstos cuando las versiones y los requisitos de las tiendas estén listos.</p>
             </div>
             <div class="platform-icons">
                 <div class="platform-icon" title="Web"><a href="https://www.revelation.website" target="_blank"><img src="web.svg" width="48"></a></div>
                 <div class="platform-icon" title="Android"><a href="https://play.google.com/store/apps/details?id=ai11.link.revelation" target="_blank"><img src="android.svg" width="48"></a></div>
                 <div class="platform-icon" title="Windows"><a href="https://apps.microsoft.com/detail/9nxhrr2p4087" target="_blank"><img src="windows.svg" width="48"></a></div>
                 <div class="platform-icon" title="Linux"><a href="https://snapcraft.io/revelation-x" target="_blank"><img src="linux.svg" width="48"></a></div>
-                <div class="platform-icon" title="iOS (próximamente)"><img src="ios.svg" width="48"></div>
-                <div class="platform-icon" title="macOS (próximamente)"><img src="macos.svg" width="48"></div>
+                <div class="platform-icon" title="iOS (previsto)"><img src="ios.svg" width="48"></div>
+                <div class="platform-icon" title="macOS (previsto)"><img src="macos.svg" width="48"></div>
             </div>
-            <p><strong>6 plataformas</strong> simultáneamente con costos mínimos de desarrollo</p>
+            <p><strong>4 plataformas disponibles</strong> · 2 plataformas de Apple previstas</p>
         </div>
 
         <!-- Slide 5: Alcance de la audiencia -->
@@ -337,98 +325,48 @@
         <div class="slide" id="localization">
             <h2>Soporte multilingüe</h2>
             <div class="feature-card">
-                <h3>🌍 Localización global</h3>
-                <p>Uso de IA para la traducción inicial</p>
-                <p>Verificación y corrección por hablantes nativos</p>
-                <p>Máximo número de idiomas para cobertura global</p>
+                <h3>🌍 Idiomas, paso a paso</h3>
+                <p>La interfaz está disponible en inglés, español, ucraniano y ruso.</p>
+                <p>Queremos ofrecer al menos una traducción bíblica verificada por cada idioma de la interfaz.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🤖 Traducción por IA</h3>
-                    <p>Creación rápida de traducciones básicas de bastante buena calidad utilizando modelos de lenguaje grandes de IA avanzados</p>
+                    <h3>🤖 Borradores y comprobaciones</h3>
+                    <p>Los agentes de IA ayudan a preparar borradores y comprobar la terminología, los enlaces y la coherencia.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>👥 Comunidad</h3>
-                    <p>Formación de una comunidad de hablantes de diversos idiomas para verificar y mejorar las traducciones de la interfaz y los comentarios</p>
+                    <h3>💬 Comentarios de los lectores</h3>
+                    <p>Los lectores y hablantes nativos pueden señalar expresiones poco claras o proponer mejoras en puntos concretos.</p>
                 </div>
             </div>
         </div>
 
         <!-- Slide 7: Plan de desarrollo -->
-        <div class="slide" id="roadmap">
-            <h2>Plan de desarrollo</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Fase 1: Preparatoria (actual)</h3>
-                    <p>👍 Funcionalidad básica para mostrar fuentes primarias y para mantener el contenido textual y gráfico de los comentarios<br>
-                    📜 Prefacio<br>
-                    🌍 Inglés, Español, Ruso, Ucraniano<br>
-                    💻 Web, Android, Windows, Linux, iOS, macOS<br>
-                    📢 Búsqueda de patrocinadores, desarrolladores, diseñadores y probadores<br></p>
+        <div class="slide" id="roadmap" aria-labelledby="roadmap-title">
+            <h2 id="roadmap-title">Hoja de ruta de Revelation</h2>
+            <div class="roadmap-chart">
+                <a class="roadmap-art" href="https://github.com/karnauhov/Revelation/blob/main/ROADMAP.md">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="roadmap-mobile.svg" width="480" height="733">
+                        <img src="roadmap.svg" width="1200" height="635" loading="lazy" alt="Ocho líneas de trabajo en paralelo, desde las primeras versiones hasta los planes futuros. Abre la hoja de ruta detallada en GitHub (en ruso).">
+                    </picture>
+                </a>
+                <div class="roadmap-nodes"></div>
+                <div class="roadmap-tooltip" id="roadmap-tooltip" role="tooltip" hidden></div>
+            </div>
+            <p class="roadmap-note">Pasa el cursor por un código o selecciónalo con el teclado para ver una breve descripción. Ábrelo para leer la entrada completa.</p>
+            <div class="roadmap-summary">
+                <div>
+                    <h3>Lo que ya está disponible</h3>
+                    <p>Desde la primera versión para Android en 2025 hasta la 1.0.8: facsímiles, diccionario de Strong y lectura bíblica en paralelo. La aplicación está disponible en web, Android, Windows y Linux. Ya se pueden leer KJV, LXX/TR y la Biblia ucraniana de Ohienko con notas.</p>
                 </div>
-                <div class="timeline-item">
-                    <h3>Fase 2: Prólogo</h3>
-                    <p>👍 Funcionalidad avanzada para trabajar con fuentes primarias (etapa 1)<br>
-                    📜 Apocalipsis 1:1–8<br>
-                    🌍 Principales idiomas europeos<br>
-                    📢 Búsqueda de patrocinadores, académicos, teólogos, ministros y hablantes nativos<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 3: Siete Iglesias</h3>
-                    <p>👍 Funcionalidad avanzada para trabajar con el diccionario y la estructura de las oraciones (etapa 2)<br>
-                    📜 Apocalipsis 1:9–3:22<br>
-                    🌍 Principales idiomas asiáticos<br>
-                    📢 Búsqueda de hablantes nativos<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 4: Siete Sellos</h3>
-                    <p>👍 Funcionalidad avanzada para buscar y analizar alusiones y referencias (etapa 3)<br>
-                    📜 Apocalipsis 4:1–8:1<br>
-                    🌍 Principales idiomas africanos<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en América del Norte<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 5: Siete Trompetas</h3>
-                    <p>👍 Funcionalidad avanzada para ayudar a comprender cómo cada sección apunta a la persona y el ministerio de Cristo (etapa 4)<br>
-                    📜 Apocalipsis 8:2–11:18<br>
-                    🌍 Idiomas "no europeos" de América del Sur y del Norte<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en Europa<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 6: La última crisis</h3>
-                    <p>👍 Funcionalidad avanzada para estudiar y relacionar pasajes con estructuras identificadas, análisis de conexiones con otros libros del Nuevo Testamento, el Libro de Daniel, el Antiguo Testamento y la Biblia en general (etapa 5)<br>
-                    📜 Apocalipsis 11:19–15:4<br>
-                    🌍 Idiomas "no europeos" de Australia y Oceanía<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en Asia<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 7: Siete Copas</h3>
-                    <p>👍 Funcionalidad avanzada para trabajar con hechos históricos, escalas cronológicas, etc. (etapa 6)<br>
-                    📜 Apocalipsis 15:5–18:24<br>
-                    🌍 Idiomas europeos adicionales<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en África<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 8: El Reino Milenario</h3>
-                    <p>👍 Funcionalidad avanzada para extraer lecciones espirituales para la vida personal, llevar diarios espirituales, etc. (etapa 7)<br>
-                    📜 Apocalipsis 19:1–20:15<br>
-                    🌍 Idiomas asiáticos adicionales<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en América del Sur<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 9: La Nueva Jerusalén</h3>
-                    <p>👍 Funcionalidad avanzada para soportar contenido multimedia en comentarios para cada pasaje<br>
-                    📜 Apocalipsis 21:1–22:5<br>
-                    🌍 Idiomas africanos adicionales<br>
-                    📢 Búsqueda de hablantes nativos. Publicidad en Australia y Oceanía<br></p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Fase 10: Epílogo</h3>
-                    <p>📜 Apocalipsis 22:6–21<br>
-                    🌍 Otros idiomas de minorías étnicas<br>
-                    📢 Búsqueda de hablantes nativos. Campañas publicitarias globales y locales<br></p>
+                <div>
+                    <h3>Lo que viene</h3>
+                    <p>Búsqueda de alusiones, Biblias en ruso y español y estudio sin conexión. Publicaremos cada pasaje al completar las siete etapas, empezando por Apocalipsis 1:1-3 y siguiendo con el prólogo completo. En paralelo avanzarán la incorporación y anotación de manuscritos, los idiomas, la difusión y las plataformas.</p>
                 </div>
             </div>
+            <p class="roadmap-note">La hoja de ruta indica los plazos aproximados y de qué dependen.</p>
+            <a class="roadmap-details" href="https://github.com/karnauhov/Revelation/blob/main/ROADMAP.md">Ver la hoja de ruta detallada en GitHub (en ruso)</a>
         </div>
 
         <!-- Slide 8: Aspecto misionero -->
@@ -450,26 +388,22 @@
                         <p>Familiarización de cristianos de todas las denominaciones, representantes de otras religiones e incluso no creyentes con el mensaje del Apocalipsis</p>
                     </div>
                 </div>
-                
-                <p>Se planea utilizar en futuras campañas evangélicas y publicitarias en todo el mundo para la máxima difusión del mensaje de Dios.</p>
+
+                <p>A largo plazo queremos compartir los estudios completos en más idiomas y regiones, según el interés de los lectores y nuestra capacidad de mantenerlos.</p>
             </div>
         </div>
 
         <!-- Slide 9: Llamado a la acción -->
         <div class="slide" id="join">
-            <h2>Únete al proyecto</h2>
-            <p>La aplicación Revelation combinará tecnologías avanzadas y un profundo trabajo teológico para hacer que el Libro del Apocalipsis sea accesible para todos. Te invitamos a apoyar el proyecto y unirte a su misión de difundir una comprensión clara del Libro del Apocalipsis.</p>
+            <h2>Lee, comparte o envíanos tus comentarios</h2>
+            <p>Prueba la aplicación y cuéntanos qué facilitaría la lectura o el estudio. Si un pasaje te resulta útil, compártelo con quien también quiera leerlo.</p>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>🤝 Cómo puedes ayudar</h3>
-                    <p>• 🙏 Orar por nosotros<br>
-                    • 📢 Compartir <a href="https://www.revelation.website/demo/es.html" target="_blank">este enlace</a><br>
-					• 💳 Convertirse en patrocinador a través de <a href="https://waygiver.com/campaigns/3333" target="_blank">WayGiver</a><br>
-                    • 👨‍💻 Participar en el desarrollo en <a href="https://github.com/karnauhov/Revelation" target="_blank">GitHub</a><br>
-                    • 📐 Probar la aplicación<br>
-                    • 📝 Llenar con contenido<br>
-                    • 🌍 Participar en traducciones<br></p>
+                    <h3>🤝 Cómo apoyar el proyecto</h3>
+                    <p>• 🙏 Orar por el proyecto<br>
+                    • 📢 Compartir <a href="https://www.revelation.website/demo/es.html" target="_blank">esta presentación</a><br>
+                    • 💬 Informar de un problema o proponer una mejora en <a href="https://github.com/karnauhov/Revelation/issues" target="_blank">GitHub</a></p>
                 </div>
             </div>
             

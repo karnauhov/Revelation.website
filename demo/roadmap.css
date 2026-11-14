@@ -1,0 +1,124 @@
+#roadmap {
+    gap: 1rem;
+}
+
+#roadmap h2 {
+    margin-bottom: 0;
+}
+
+.roadmap-chart {
+    position: relative;
+    width: min(100%, 960px);
+}
+
+.roadmap-art {
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 16px 36px rgba(12, 20, 44, .27);
+}
+
+.roadmap-art picture {
+    display: block;
+}
+
+.roadmap-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: clamp(28px, 3.9%, 40px);
+    height: clamp(30px, 5.9%, 44px);
+    border-radius: 5px;
+}
+
+.roadmap-node:hover,
+.roadmap-node:focus-visible {
+    outline: 2px solid #ffed93;
+    background: rgba(255, 237, 147, .13);
+    z-index: 1;
+}
+
+.roadmap-tooltip {
+    position: absolute;
+    z-index: 2;
+    width: max-content;
+    max-width: min(320px, calc(100% - 16px));
+    padding: .55rem .7rem;
+    border: 1px solid #c8aaff;
+    border-radius: 8px;
+    background: #211a46;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.4;
+    text-align: start;
+    box-shadow: 0 5px 18px rgba(5, 8, 24, .4);
+    pointer-events: none;
+}
+
+.roadmap-art:focus-visible,
+.roadmap-details:focus-visible {
+    outline: 3px solid #ffed93;
+    outline-offset: 5px;
+}
+
+.roadmap-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.roadmap-summary {
+    width: min(100%, 960px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+    text-align: start;
+}
+
+.roadmap-summary > div {
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+    border-radius: 12px;
+    background: #211a46;
+}
+
+.roadmap-summary h3 {
+    font-size: 1.18rem;
+    margin-bottom: .35rem;
+}
+
+.roadmap-summary p,
+.roadmap-note {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.roadmap-details {
+    display: inline-block;
+    padding: .65rem .8rem;
+}
+
+body:has(.nav-dot:nth-child(7).active) .navigation {
+    top: 50%;
+    right: 5px;
+    bottom: auto;
+    left: auto;
+    flex-direction: column;
+    gap: 8px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 700px) {
+    .roadmap-summary {
+        grid-template-columns: 1fr;
+    }
+
+    #roadmap {
+        padding-inline: .25rem;
+    }
+
+    .roadmap-node {
+        width: 11%;
+        height: 5.7%;
+    }
+
+}

@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="733" viewBox="0 0 480 733" role="img" aria-labelledby="title desc">
+  <title id="title">Revelation roadmap</title>
+  <desc id="desc">App, Study, Manuscripts, Notes, Languages, Bible texts, Outreach and Platforms. Filled circles show past work, open circles show plans, diamonds show work that depends on readiness. Each code has a description in the roadmap.</desc>
+  <defs><linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17243f"/><stop offset=".58" stop-color="#101830"/><stop offset="1" stop-color="#241a39"/></linearGradient></defs>
+  <rect width="480" height="733" rx="22" fill="url(#night)"/>
+  <rect x="8" y="8" width="464" height="717" rx="17" fill="none" stroke="#a8b9d9" stroke-opacity=".28"/>
+  <text x="24" y="36" fill="#ecd39d" font-family="Arial, sans-serif" font-size="22" font-weight="700">Revelation</text>
+  <g id="features" fill="none" stroke="#77D5FF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-12-8h24v16h-24zM-12-2h24M-7-5h1m3 0h1M-5 4l4 3 6-6" transform="translate(33 70) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="77" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">App</text>
+    <path d="M30 105H180" stroke-width="2.5" opacity=".81"/>
+    <path d="M180 105H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="105" r="5.5" fill="#77D5FF" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A1</text>
+    <circle cx="99" cy="105" r="5.5" fill="#77D5FF" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A2</text>
+    <circle cx="153" cy="105" r="5.5" fill="#77D5FF" stroke="#121c35" stroke-width="2"/>
+    <text x="153" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A3</text>
+    <circle cx="207" cy="105" r="5.5" fill="#121c35" stroke="#77D5FF" stroke-width="2"/>
+    <text x="207" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A4</text>
+    <circle cx="261" cy="105" r="5.5" fill="#121c35" stroke="#77D5FF" stroke-width="2"/>
+    <text x="261" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A5</text>
+    <circle cx="315" cy="105" r="5.5" fill="#121c35" stroke="#77D5FF" stroke-width="2"/>
+    <text x="315" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A6</text>
+    <circle cx="369" cy="105" r="5.5" fill="#121c35" stroke="#77D5FF" stroke-width="2"/>
+    <text x="369" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A7</text>
+    <circle cx="423" cy="105" r="5.5" fill="#121c35" stroke="#77D5FF" stroke-width="2"/>
+    <text x="423" y="130" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">A8</text>
+  </g>
+  <g id="study" fill="none" stroke="#FBCB7E" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 10q-7-6-13-4v-15q6-3 13 3 7-6 13-3v15q-6-2-13 4zm0-16v16m-8-13 4 1m8-1 4-1" transform="translate(33 150) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="157" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Study</text>
+    <path d="M30 185H126" stroke-width="2.5" opacity=".81"/>
+    <path d="M126 185H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="185" r="5.5" fill="#FBCB7E" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S1</text>
+    <circle cx="99" cy="185" r="5.5" fill="#FBCB7E" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S2</text>
+    <circle cx="153" cy="185" r="5.5" fill="#121c35" stroke="#FBCB7E" stroke-width="2"/>
+    <text x="153" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S3</text>
+    <circle cx="207" cy="185" r="5.5" fill="#121c35" stroke="#FBCB7E" stroke-width="2"/>
+    <text x="207" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S4</text>
+    <circle cx="261" cy="185" r="5.5" fill="#121c35" stroke="#FBCB7E" stroke-width="2"/>
+    <text x="261" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S5</text>
+    <circle cx="315" cy="185" r="5.5" fill="#121c35" stroke="#FBCB7E" stroke-width="2"/>
+    <text x="315" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S6</text>
+    <circle cx="369" cy="185" r="5.5" fill="#121c35" stroke="#FBCB7E" stroke-width="2"/>
+    <text x="369" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S7</text>
+    <path d="M423 179l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="423" y="210" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">S8</text>
+  </g>
+  <g id="acquisition" fill="none" stroke="#ECA7FF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-9-10h16l5 5v14H-9zM7-10v5h5M-5-4h8m-8 5h7m-7 5h4M-13-7v18H7" transform="translate(33 230) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="237" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Manuscripts</text>
+    <path d="M30 265H180" stroke-width="2.5" opacity=".81"/>
+    <path d="M180 265H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="265" r="5.5" fill="#ECA7FF" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M1</text>
+    <circle cx="99" cy="265" r="5.5" fill="#ECA7FF" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M2</text>
+    <circle cx="153" cy="265" r="5.5" fill="#ECA7FF" stroke="#121c35" stroke-width="2"/>
+    <text x="153" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M3</text>
+    <path d="M207 259l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="207" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M4</text>
+    <path d="M261 259l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="261" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M5</text>
+    <path d="M315 259l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="315" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M6</text>
+    <path d="M369 259l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="369" y="290" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">M7</text>
+  </g>
+  <g id="annotation" fill="none" stroke="#82E1B4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-11-4v-7h7m8 0h7v7m0 8v7H4m-8 0h-7V4m3-8h16m-16 4H4m-12 4H1" transform="translate(33 310) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="317" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Notes</text>
+    <path d="M30 345H72" stroke-width="2.5" opacity=".81"/>
+    <path d="M72 345H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="345" r="5.5" fill="#82E1B4" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N1</text>
+    <circle cx="99" cy="345" r="5.5" fill="#121c35" stroke="#82E1B4" stroke-width="2"/>
+    <text x="99" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N2</text>
+    <circle cx="153" cy="345" r="5.5" fill="#121c35" stroke="#82E1B4" stroke-width="2"/>
+    <text x="153" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N3</text>
+    <circle cx="207" cy="345" r="5.5" fill="#121c35" stroke="#82E1B4" stroke-width="2"/>
+    <text x="207" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N4</text>
+    <circle cx="261" cy="345" r="5.5" fill="#121c35" stroke="#82E1B4" stroke-width="2"/>
+    <text x="261" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N5</text>
+    <circle cx="315" cy="345" r="5.5" fill="#121c35" stroke="#82E1B4" stroke-width="2"/>
+    <text x="315" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N6</text>
+    <path d="M369 339l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="369" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N7</text>
+    <path d="M423 339l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="423" y="370" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">N8</text>
+  </g>
+  <g id="locales" fill="none" stroke="#F7AB98" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-13-9h26v15H2l-6 5V6h-9zM-8-3h7m-3-3v2q0 5-4 7m1-5 4 5M3 3l3-7 4 7M4 1h5" transform="translate(33 390) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="397" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Languages</text>
+    <path d="M30 425H180" stroke-width="2.5" opacity=".81"/>
+    <path d="M180 425H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="425" r="5.5" fill="#F7AB98" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L1</text>
+    <circle cx="99" cy="425" r="5.5" fill="#F7AB98" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L2</text>
+    <circle cx="153" cy="425" r="5.5" fill="#F7AB98" stroke="#121c35" stroke-width="2"/>
+    <text x="153" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L3</text>
+    <circle cx="207" cy="425" r="5.5" fill="#121c35" stroke="#F7AB98" stroke-width="2"/>
+    <text x="207" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L4</text>
+    <path d="M261 419l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="261" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L5</text>
+    <path d="M315 419l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="315" y="450" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">L6</text>
+  </g>
+  <g id="bibles" fill="none" stroke="#AAB6FF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-12-7q7-4 12 0 5-4 12 0v14q-6-3-12 1-6-4-12-1zm12 0V8M7-4v7m-3-5h6M-8-3h4m-4 4h4" transform="translate(33 470) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="477" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Bible texts</text>
+    <path d="M30 505H126" stroke-width="2.5" opacity=".81"/>
+    <path d="M126 505H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="505" r="5.5" fill="#AAB6FF" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B1</text>
+    <circle cx="99" cy="505" r="5.5" fill="#AAB6FF" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B2</text>
+    <circle cx="153" cy="505" r="5.5" fill="#121c35" stroke="#AAB6FF" stroke-width="2"/>
+    <text x="153" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B3</text>
+    <circle cx="207" cy="505" r="5.5" fill="#121c35" stroke="#AAB6FF" stroke-width="2"/>
+    <text x="207" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B4</text>
+    <path d="M261 499l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="261" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B5</text>
+    <circle cx="315" cy="505" r="5.5" fill="#121c35" stroke="#AAB6FF" stroke-width="2"/>
+    <text x="315" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B6</text>
+    <path d="M369 499l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="369" y="530" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">B7</text>
+  </g>
+  <g id="outreach" fill="none" stroke="#F59EB9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-10-2l14-6v15l-14-5zm2 5 3 6h4l-2-6m11-5 5-3M8 2l5 3" transform="translate(33 550) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="557" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Outreach</text>
+    <path d="M30 585H72" stroke-width="2.5" opacity=".81"/>
+    <path d="M72 585H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="585" r="5.5" fill="#F59EB9" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O1</text>
+    <circle cx="99" cy="585" r="5.5" fill="#121c35" stroke="#F59EB9" stroke-width="2"/>
+    <text x="99" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O2</text>
+    <circle cx="153" cy="585" r="5.5" fill="#121c35" stroke="#F59EB9" stroke-width="2"/>
+    <text x="153" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O3</text>
+    <circle cx="207" cy="585" r="5.5" fill="#121c35" stroke="#F59EB9" stroke-width="2"/>
+    <text x="207" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O4</text>
+    <path d="M261 579l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="261" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O5</text>
+    <path d="M315 579l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="315" y="610" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">O6</text>
+  </g>
+  <g id="platforms" fill="none" stroke="#75DFDF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-13-9H6V4h-19zM-10 8h13m-7-4v4m13-12h5v14H9zm2 11h1" transform="translate(33 630) scale(.75)" stroke-width="2.25"/>
+    <text x="54" y="637" stroke="none" fill="#e9f0ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Platforms</text>
+    <path d="M30 665H180" stroke-width="2.5" opacity=".81"/>
+    <path d="M180 665H449" stroke-width="2" stroke-dasharray="4 6" opacity=".69"/>
+    <circle cx="45" cy="665" r="5.5" fill="#75DFDF" stroke="#121c35" stroke-width="2"/>
+    <text x="45" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P1</text>
+    <circle cx="99" cy="665" r="5.5" fill="#75DFDF" stroke="#121c35" stroke-width="2"/>
+    <text x="99" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P2</text>
+    <circle cx="153" cy="665" r="5.5" fill="#75DFDF" stroke="#121c35" stroke-width="2"/>
+    <text x="153" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P3</text>
+    <path d="M207 659l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="207" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P4</text>
+    <path d="M261 659l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="261" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P5</text>
+    <path d="M315 659l6 6-6 6-6-6z" fill="#121c35" stroke-width="2"/>
+    <text x="315" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P6</text>
+    <circle cx="369" cy="665" r="5.5" fill="#121c35" stroke="#75DFDF" stroke-width="2"/>
+    <text x="369" y="690" text-anchor="middle" fill="#e9f0ff" stroke="none" font-family="Arial, sans-serif" font-size="19" font-weight="700">P7</text>
+  </g>
+  <g fill="#e9f0ff" font-family="Arial, sans-serif" font-size="19">
+    <circle cx="97" cy="705" r="4.5" fill="#b9cffa"/><text x="110" y="710">Past</text>
+    <circle cx="197" cy="705" r="4.5" fill="none" stroke="#b9cffa" stroke-width="1.6"/><text x="210" y="710">Plan</text>
+    <path d="M300 700l5 5-5 5-5-5z" fill="none" stroke="#b9cffa" stroke-width="1.6"/><text x="313" y="710">If ready</text>
+  </g>
+</svg>
